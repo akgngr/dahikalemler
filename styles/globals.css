@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+*  Global Class
+**/
+.site-icon {
+  color: #fd5f00;
+  font-size: 1.6em;
+}
