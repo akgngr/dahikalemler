@@ -66,8 +66,10 @@ export default class Slider extends Component {
       <ul>
       {cats.map((slider, k) => (
         <li key={k}>
-          <h2>{slider.name}</h2>
+          <h2>{slider.title}</h2>
           <p>{slider.description}</p>
+          <p>{slider.image}</p>
+          <p>{slider.url}</p>
         </li>
       ))}
     </ul>
