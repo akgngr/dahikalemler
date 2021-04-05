@@ -26,7 +26,7 @@ collections:
       - label: 'Slider'
         name: 'slider'
         file: 'content/slider.md'
-        media_folder: '/image/slider'
+        media_folder: '../image/slider'
         fields:
           - label: 'Slide'
             name: 'slide'
