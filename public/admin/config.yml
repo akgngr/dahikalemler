@@ -26,7 +26,7 @@ collections:
       - label: 'Slider'
         name: 'slider'
         file: 'content/slider.md'
-        media_folder: '/image/slider'
+        media_folder: 'public/image/slider'
         fields:
           - label: 'Slide'
             name: 'slide'
@@ -38,7 +38,7 @@ collections:
               - label: 'Image'
                 name: 'thumbnail'
                 widget: 'image'
-                default: 'public/image/slider/bg_1.jpg'
+                default: 'image/slider/bg_1.jpg'
                 media_library:
                   config:
                     multiple: true
