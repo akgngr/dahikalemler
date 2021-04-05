@@ -1,16 +1,21 @@
+import SwiperCore, { Navigation, Pagination, Autoplay, A11y, Lazy, EffectFade } from 'swiper';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './styles.module.css'
+
+SwiperCore.use([Navigation, Pagination, Autoplay, A11y, Lazy, EffectFade]);
 
 const Slider = () => {
   return (
     <Swiper
+      navigation
       className={styles.slidecontainer}
       slidesPerView={1}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      autoplay= {{
-        delay: 5000,
-      }}
+      autoplay={true}
+      lazy={true}
+      effect={"fade"}
+      loop={true}
     >
       <SwiperSlide>
         <div className="">

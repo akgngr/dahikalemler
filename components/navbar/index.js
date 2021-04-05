@@ -18,10 +18,30 @@ export default function Navbar({ fixed }) {
           'url' : '/hakkimizda'
         },
         {
-          'name' : 'Denem',
+          'name' : 'Eğitim Felsefesi',
+          'url' : '/dene'
+        },
+        {
+          'name' : 'İlkelerimiz',
+          'url' : '/dene'
+        },
+        {
+          'name' : 'Hedeflerimiz',
           'url' : '/dene'
         }
       ]
+    },
+    {
+      'name' : 'Dersler',
+      'url' : '/'
+    },
+    {
+      'name' : 'Duyurular',
+      'url' : '/dene'
+    },
+    {
+      'name' : 'Şubelerimiz',
+      'url' : '/dene'
     },
     {
       'name': 'İletişim',
