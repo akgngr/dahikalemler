@@ -7,6 +7,9 @@ import { IoIosSend } from 'react-icons/io';
 import { IoIosCall } from 'react-icons/io';
 import Navbar from '../navbar/index'
 
+const myLoader = ({ src }) => {
+    return `${src}`
+  }
 
 const layout = ({ children }) => {
     return(
@@ -18,7 +21,7 @@ const layout = ({ children }) => {
             <div className={styles.navbartop}>
 
                 <div className="col-span-1 lg:col-span-2 py-4 lg:py-6">
-                    <Image src="/image/logo.png" width='143' height="54" />
+                    <Image loader={myLoader} src="/image/logo.png" width='143' height="54" />
                 </div>
 
                 <IconContext.Provider value={{ className:"site-icon"}}>
