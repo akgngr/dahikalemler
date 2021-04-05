@@ -77,5 +77,3 @@ export default class Slider extends Component {
     );
   }
 }
-
-export default Slider
