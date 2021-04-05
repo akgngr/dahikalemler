@@ -1,10 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
 import styles from './styles.module.css'
-
-const myLoader = ({ src }) => {
-  return `${src}`
-}
 
 const Slider = () => {
   return (
@@ -13,17 +8,16 @@ const Slider = () => {
       slidesPerView={1}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
+      autoplay= {{
+        delay: 5000,
+      }}
     >
       <SwiperSlide>
         <div className="">
           <div className="bgWrap">
-            <Image
-              loader={myLoader}
+            <img
               alt="Mountains"
               src="/image/slider/bg_1.jpg"
-              layout="fill"
-              objectFit="cover"
-              quality={100}
             />
           </div>
           <div className={styles.overlay}></div>
@@ -41,13 +35,9 @@ const Slider = () => {
       <SwiperSlide>
         <div className="slider-item">
           <div className="bgWrap">
-            <Image
-              loader={myLoader}
+            <img
               alt="Mountains"
               src="/image/slider/bg_2.jpg"
-              layout="fill"
-              objectFit="cover"
-              quality={100}
             />
           </div>
           <div className={styles.overlay}></div>

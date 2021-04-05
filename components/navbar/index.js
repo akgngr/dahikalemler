@@ -2,7 +2,6 @@ import React from "react";
 import { FaBars } from 'react-icons/fa'
 import Link from 'next/link'
 import Dropdown from "../dropdown/index"
-import { Menu } from '@headlessui/react'
 
 export default function Navbar({ fixed }) {
   const menu = [
@@ -49,7 +48,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center px-2 py-3 bg-gray-800">
+      <nav className="relative flex flex-wrap items-center px-2 py-3 bg-gray-800 z-50">
         <div className="container flex flex-wrap justify-between items-center">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
 

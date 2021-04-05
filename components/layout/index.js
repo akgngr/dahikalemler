@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Head from "next/head"
 import styles from "./index.module.css"
-import Image from "next/image"
 import { IconContext } from "react-icons";
 import { IoIosSend } from 'react-icons/io';
 import { IoIosCall } from 'react-icons/io';
@@ -21,7 +20,7 @@ const layout = ({ children }) => {
             <div className={styles.navbartop}>
 
                 <div className="col-span-1 lg:col-span-2 py-4 lg:py-6">
-                    <Image loader={myLoader} src="/image/logo.png" width='143' height="54" />
+                    <Link href="/"><a><img src="/image/logo.png" width='143' height="54" /></a></Link>
                 </div>
 
                 <IconContext.Provider value={{ className:"site-icon"}}>
