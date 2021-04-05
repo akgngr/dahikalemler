@@ -8,9 +8,9 @@ import { attributes, react as SliderContent } from '../../content/slider.md';
 SwiperCore.use([Navigation, Pagination, Autoplay, A11y, Lazy, EffectFade]);
 
 export default class Slider extends Component {
-  
+
   render(){
-    let { slider } = attributes;
+    let { title, slider } = attributes;
     return (
       <>
       <Swiper
@@ -66,12 +66,12 @@ export default class Slider extends Component {
       </Swiper>
       <SliderContent />
       <ul>
-      {cats.map((slider, k) => (
+      {slider.map((slides, k) => (
         <li key={k}>
-          <h2>{slider.title}</h2>
-          <p>{slider.description}</p>
-          <p>{slider.image}</p>
-          <p>{slider.url}</p>
+          <h2>{slides.title}</h2>
+          <p>{slides.description}</p>
+          <p>{slides.image}</p>
+          <p>{slides.url}</p>
         </li>
       ))}
     </ul>
