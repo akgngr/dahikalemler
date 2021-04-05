@@ -2,7 +2,7 @@ import * as React from "react";
 import { Menu, Transition } from "@headlessui/react";
 import Link from 'next/link'
 
-export default function (props) {
+const Dropdown = (props) => {
   return (
     <>
     <div className="flex items-center justify-center">
@@ -10,7 +10,7 @@ export default function (props) {
         <Menu>
           {({ open }) => (
             <>
-              <span className="rounded-md shadow-sm">
+
                 <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 transition duration-150 ease-in-out text-white hover:text-gray-300 focus:outline-none active:bg-gray-50 active:text-white-200">
                   <span>{props.name}</span>
                   <svg
@@ -25,7 +25,6 @@ export default function (props) {
                     />
                   </svg>
                 </Menu.Button>
-              </span>
 
               <Transition
                 show={open}
@@ -40,7 +39,7 @@ export default function (props) {
                   static
                   className="lg:absolute relative w-56 mt-2 origin-top-left bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
                 >
-                  <div className="px-4 py-3">  
+                  <div className="px-4 py-3">
                     <ul>
                     {
                         props.data.map(
@@ -57,7 +56,7 @@ export default function (props) {
                     }
                     </ul>
                   </div>
-                  
+
                 </Menu.Items>
               </Transition>
             </>
@@ -69,4 +68,4 @@ export default function (props) {
   );
 }
 
-
+export default Dropdown

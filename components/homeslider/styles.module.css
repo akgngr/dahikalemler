@@ -1,0 +1,29 @@
+.slidecontainer{
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+}
+.overlay{
+    background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+    @apply absolute top-0 bottom-0 left-0 right-0 opacity-50
+}
+.textcontainer{
+    @apply container w-11/12 m-auto
+}
+.slidertext{
+    height: 600px;
+    @apply max-h-full flex items-center justify-center md:justify-start
+}
+.text{
+    @apply w-3/4 md:w-1/2 z-10 text-center md:text-left
+}
+.texthead{
+    line-height: 1.2 !important;
+    @apply font-bold text-white text-5xl mb-6
+}
+.textp{
+    @apply text-white mb-4
+}
+.textbutton{
+    @apply px-6 py-4 mt-3 cursor-pointer inline-block rounded-full
+}

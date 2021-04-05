@@ -9,3 +9,15 @@
   color: #fd5f00;
   font-size: 1.6em;
 }
+.bgWrap {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+.button-default{
+  background: #fd5f00;
+  border: 1px solid #fd5f00;
+  color: #fff;
+}

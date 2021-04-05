@@ -2,6 +2,7 @@ import React from "react";
 import { FaBars } from 'react-icons/fa'
 import Link from 'next/link'
 import Dropdown from "../dropdown/index"
+import { Menu } from '@headlessui/react'
 
 export default function Navbar({ fixed }) {
   const menu = [
@@ -31,27 +32,27 @@ export default function Navbar({ fixed }) {
 
   const listMenu = menu.map(
     (m, index) => {
-      return(m.dropdown 
+      return(m.dropdown
         ?
         <Dropdown key={index} name={m.name} data={m.dropdown} />
-        
-        : <li className="nav-item" key={index}>
+
+        : <li className="nav-item inline-flex justify-center w-full px-4 py-2 text-sm font-medium" key={index}>
             <Link href={m.url}>
-              <a className="px-3 py-2 flex items-center text-xs capitalize font-bold leading-snug text-white hover:opacity-75">
+              <a className="capitalize text-white hover:opacity-75">
                 {m.name}
               </a>
             </Link>
           </li>
-          
+
       )}
   );
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center px-2 py-3 bg-gray-800 mb-3">
+      <nav className="relative flex flex-wrap items-center px-2 py-3 bg-gray-800">
         <div className="container flex flex-wrap justify-between items-center">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
-          
+
             <button
               className="text-white ml-auto cursor-pointer leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
@@ -73,7 +74,7 @@ export default function Navbar({ fixed }) {
           </div>
         </div>
       </nav>
-      
+
     </>
   );
 }
