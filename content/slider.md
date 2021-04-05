@@ -1,10 +1,7 @@
 ---
 slider:
-  - label: 'Featured Image'
-    name: 'thumbnail'
-    widget: 'image'
-    default: '/uploads/chocolate-dogecoin.jpg'
-    media_library:
-    config:
-      multiple: true
+  - title: 'Maru is a Scottish Fold from Japan, and he loves boxes.'
+    description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a Scottish Fold from Japan, and he loves boxes.
+    img: 'image/slider/bg_1.jpg'
+    url: '/hakkimizda'
 ---
