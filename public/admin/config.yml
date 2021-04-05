@@ -2,10 +2,11 @@ backend:
   name: git-gateway
   branch: master
 media_folder: image
-public_folder: image
+public_folder: public/image
 collections:
   - name: 'pages'
     label: 'Pages'
+    folder: 'content
     files:
       - label: 'Home'
         name: 'home'
@@ -22,6 +23,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
   - name: 'module'
     label: 'Modul'
+    folder: 'content
     files:
       - label: 'Slider'
         name: 'slider'
