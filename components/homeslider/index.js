@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import styles from './styles.module.css'
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://dahi-kalemler.netlify.app/${src}?w=${width}&q=${quality || 75}`
+const myLoader = ({ src }) => {
+  return `${src}`
 }
 
 const Slider = () => {
