@@ -1,5 +1,5 @@
 ---
-title: 'Slider Resimleri'
+baslik: 'Slider Resimleri'
 slider:
   - title: 'Maru is a Scottish Fold from Japan, and he loves boxes.'
     description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a Scottish Fold from Japan, and he loves boxes.
