@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: public/img
-public_folder: img
+media_folder: public/image
+public_folder: image
 collections:
   - name: 'pages'
     label: 'Pages'
@@ -26,7 +26,6 @@ collections:
       - label: 'Slider'
         name: 'slider'
         file: 'content/slider.md'
-        media_folder: '/image/slider'
         fields:
           - { label: 'Başlık', name: 'baslik', widget: 'string' }
           - label: 'Slide'
