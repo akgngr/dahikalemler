@@ -1,8 +1,9 @@
+import { Component } from 'react'
 import SwiperCore, { Navigation, Pagination, Autoplay, A11y, Lazy, EffectFade } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './styles.module.css'
-import { attributes, react as SliderContent } from '../content/slider.md';
+import { attributes, react as SliderContent } from '../../content/slider.md';
 
 SwiperCore.use([Navigation, Pagination, Autoplay, A11y, Lazy, EffectFade]);
 
@@ -63,6 +64,7 @@ export default class Slider extends Component {
           </div>
         </SwiperSlide>
       </Swiper>
+      <SliderContent />
       <ul>
       {cats.map((slider, k) => (
         <li key={k}>
