@@ -1,14 +1,16 @@
 ---
-baslik: 'Slider Resimleri'
+baslik: Slider Resimleri
 slider:
-  - description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a Scottish Fold from Japan, and he loves boxes.
-    title: Maru is a Scottish Fold from Japan, and he loves boxes.    
-    image: 'image/slider/bg_1.jpg'
-    url: '/hakkimizda'
-  - description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a Scottish Fold from Japan, and he loves boxes.
-    title: Maru is a Scottish Fold from Japan, and he loves boxes.    
-    image: 'image/slider/bg_1.jpg'
-    url: '/hakkimizda'
+  - description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a
+      Scottish Fold from Japan, and he loves boxes.
+    title: Maru is a Scottish Fold from Japan, and he loves boxes.
+    image: public/image/laboratuvar.png
+    url: /hakkimizda
+  - description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a
+      Scottish Fold from Japan, and he loves boxes.
+    title: Maru is a Scottish Fold from Japan, and he loves boxes.
+    image: public/image/pedodonti.png
+    url: /hakkimizda
 ---
 Welcome to my awesome page about cats of the internet.
 
