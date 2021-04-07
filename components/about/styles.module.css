@@ -1,0 +1,37 @@
+.section{
+    background: url('/image/bg_3.jpg') no-repeat;
+    background-size: cover;
+    @apply pt-32 pb-32 w-full relative;
+}
+.overlay {
+    background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+    @apply absolute top-0 bottom-0 left-0 right-0 opacity-80
+}
+.about{
+    z-index: 10;
+    @apply w-full lg:w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 z-10 text-white
+}
+.aboutimg{
+    background: url('/image/about-2.jpg') no-repeat;
+    background-size: cover;
+    z-index: 10;
+    @apply h-96 mr-4 ml-4 flex justify-center items-center;
+}
+.iconplay{
+    font-size: 20px;
+    color: #fd5f00;
+}
+.iconplay:before{
+    content: "\25B6";
+}
+.count{
+    position: relative;
+    z-index: 10;
+    @apply w-full pt-20 grid md:grid-cols-2 lg:grid-cols-4
+}
+.countelement{
+   @apply flex justify-center items-center flex-col text-white md:pb-8 pb-8 lg:pb-0
+}
+.countelement strong{
+    @apply text-4xl pb-4
+}

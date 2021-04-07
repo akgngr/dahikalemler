@@ -69,7 +69,7 @@ export default function Navbar({ fixed }) {
   return (
     <>
       <nav className="relative flex flex-wrap items-center px-2 py-3 bg-gray-800 z-50">
-        <div className="container flex flex-wrap justify-between items-center">
+        <div className="w-full flex flex-wrap justify-between items-center">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
 
             <button

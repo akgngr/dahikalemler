@@ -28,7 +28,7 @@ const layout = ({ children }) => {
                         <div className={styles.ortala}>
                             <IoIosSend />
                         </div>
-                        
+
                         <div className="flex flex-col">
                             <h3 className="font-bold">Email</h3>
                             <span> youremail@email.com </span>
@@ -41,7 +41,7 @@ const layout = ({ children }) => {
                         <div className={styles.ortala}>
                             <IoIosCall />
                         </div>
-                    
+
                         <div className="flex flex-col">
                             <span className="font-bold">Phone</span>
                             <span>+90505050505</span>
@@ -57,7 +57,7 @@ const layout = ({ children }) => {
             <Navbar />
         </header>
 
-        <main className="container">
+        <main className="w-full">
             {children}
         </main>
         </>

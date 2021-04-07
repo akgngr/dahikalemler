@@ -1,6 +1,6 @@
 ---
 title: Dahi Kalemler Hakkında
-description: '.. yılı aşmış tecrübemizle ve deneyimli eğitim kadromuzla öğrencilerimizin hedeflerine ulaşmaları konusunda rehber olmaktan gurur duyuyoruz.'
+description: '19 yılı aşmış tecrübemizle ve deneyimli eğitim kadromuzla öğrencilerimizin hedeflerine ulaşmaları konusunda rehber olmaktan gurur duyuyoruz.'
 image: image/about.jpg
 etkinlikler:
 - description: 'Bizim için önceliğimiz güvenliktir. Öğrencilerimizin güvenli bir ortamda ders işlemesidir.'

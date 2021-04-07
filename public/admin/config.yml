@@ -58,4 +58,15 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Icon', name: 'icon', allow_add: false, media_folder: 'public/svg', public_folder: '/svg', widget: 'image', add_to_top: true}
+              - { label: 'Icon', name: 'icon', allow_add: true, media_folder: 'svg', widget: 'image', add_to_top: true}
+      - label: 'Hakkımızda'
+        name: 'about'
+        file: 'content/about.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Açıklama 1', name: 'description1', widget: 'string' }
+          - { label: 'Açıklama 2', name: 'description2', widget: 'string' }
+          - { label: 'Öğretmen Sayısı', name: 'ogretmen', widget: 'number', value_type: "int", min: 1 }
+          - { label: 'Öğrenci Sayısı', name: 'ogrenci', widget: 'number', value_type: "int", min: 1 }
+          - { label: 'Şube Sayısı', name: 'sube', widget: 'number', value_type: "int", min: 1 }
+          - { label: 'Sınıf Sayısı', name: 'sinif', widget: 'number', value_type: "int", min: 1 }
