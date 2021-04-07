@@ -23,58 +23,31 @@ export default class Slider extends Component {
         effect={"fade"}
         loop={true}
       >
-        <SwiperSlide>
+        {slider.map((slides, k) => (
+        <SwiperSlide key={k}>
           <div className="">
             <div className="bgWrap">
               <img
-                alt="Mountains"
-                src="/image/slider/bg_1.jpg"
+                className="object-cover w-full h-full"
+                alt={slides.title}
+                src={slides.image}
               />
             </div>
             <div className={styles.overlay}></div>
             <div className={styles.textcontainer}>
               <div className={styles.slidertext}>
                 <div className={styles.text}>
-                  <h1 className={styles.texthead}>Education Needs Complete Solution</h1>
-                  <p className={styles.textp}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                  <p className={styles.textp}><a href="#" className={styles.textbutton + ' button-default'} >Contact Us</a></p>
+                  <h2 className={styles.texthead}>{slides.title}</h2>
+                  <p className={styles.textp}>{slides.description}</p>
+                  <p className={styles.textp}><a href={slides.url} className={styles.textbutton + ' button-default'} >Contact Us</a></p>
                 </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="slider-item">
-            <div className="bgWrap">
-              <img
-                alt="Mountains"
-                src="/image/slider/bg_2.jpg"
-              />
-            </div>
-            <div className={styles.overlay}></div>
-            <div className={styles.textcontainer}>
-              <div className={styles.slidertext}>
-                <div className={styles.text}>
-                  <h1 className={styles.texthead}>Education Needs Complete Solution</h1>
-                  <p className={styles.textp}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                  <p className={styles.textp}><a href="#" className={styles.textbutton + ' button-default'} >Contact Us</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+        ))}
       </Swiper>
       <SliderContent />
-      <ul>
-      {slider.map((slides, k) => (
-        <li key={k}>
-          <h2>{slides.title}</h2>
-          <p>{slides.description}</p>
-          <p>{slides.image}</p>
-          <p>{slides.url}</p>
-        </li>
-      ))}
-    </ul>
     </>
     );
   }
