@@ -58,4 +58,4 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Icon', name: 'icon', allow_add: false, media_folder: '/svg', widget: 'image'}
+              - { label: 'Icon', name: 'icon', allow_add: false, media_folder: 'public/svg', widget: 'image'}
