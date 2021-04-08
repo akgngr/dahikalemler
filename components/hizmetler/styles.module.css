@@ -1,0 +1,28 @@
+.section{
+    @apply w-full
+}
+.hizmet1{
+    background: #fd5f00 ;
+    @apply py-12 px-6 h-96 flex justify-center items-center flex-col text-white
+}
+.hizmet2{
+    background: #0f1329;
+    @apply py-12 px-6 h-96 flex justify-center items-center flex-col text-white
+}
+.icon{
+    padding-bottom: 1rem;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    fill: white;
+}
+.icon svg {
+    fill: #ffffff;
+}
+.baslik{
+    @apply font-bold text-xl pb-4
+}
+.p{
+    @apply text-center
+}

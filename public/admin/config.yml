@@ -70,3 +70,24 @@ collections:
           - { label: 'Öğrenci Sayısı', name: 'ogrenci', widget: 'number', value_type: "int", min: 1 }
           - { label: 'Şube Sayısı', name: 'sube', widget: 'number', value_type: "int", min: 1 }
           - { label: 'Sınıf Sayısı', name: 'sinif', widget: 'number', value_type: "int", min: 1 }
+      - label: 'Hizmetler'
+          name: 'hizmetler'
+          file: 'content/hizmetler.md'
+          fields:
+            - { label: 'Hizmet 1', name: 'hizmet1', widget: 'string' }
+            - { label: 'Açıklama 1', name: 'description1', widget: 'string' }
+            - { label: 'Hizmet 2', name: 'hizmet2', widget: 'string' }
+            - { label: 'Açıklama 2', name: 'description2', widget: 'text' }
+            - { label: 'Hizmet 3', name: 'hizmet3', widget: 'string' }
+            - { label: 'Açıklama 3', name: 'description3', widget: 'string' }
+            - { label: 'Hizmet 4', name: 'hizmet4', widget: 'string' }
+            - { label: 'Açıklama 4', name: 'description4', widget: 'text' }
+  - label: "Blog"
+    name: "blog"
+    folder: "_posts/blog"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -19,7 +19,7 @@
 }
 .texthead{
     line-height: 1.2 !important;
-    @apply font-bold text-white text-5xl mb-6
+    @apply font-bold text-white text-3xl md:text-5xl mb-6
 }
 .textp{
     @apply text-white mb-4
