@@ -1,0 +1,21 @@
+.section{
+    @apply pt-28 w-11/12 m-auto pb-10
+}
+.title{
+    @apply text-center pb-16 w-7/12 m-auto
+}
+.title h2{
+    @apply font-semibold text-4xl pb-6
+}
+.items{
+    @apply pl-4 pr-4
+}
+.items h3{
+    @apply font-semibold text-2xl pt-6 pb-2 text-black
+}
+.img{
+    @apply w-full h-72 bg-no-repeat bg-cover
+}
+.button{
+    @apply rounded-full p-4 bg-yellow-600 text-white mt-6 mb-4
+}
