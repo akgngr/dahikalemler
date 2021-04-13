@@ -93,15 +93,15 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Dersler"
-      name: "dersler"
-      folder: "_posts/dersler"
-      create: true
-      format: "frontmatter"
-      slug: "{{slug}}"
-      identifier_field: slug
-      summary: "{{name}}"
-      fields:
-        - { label: "Name", name: "name", widget: "string" }
-        - { label: "Slug", name: "slug", widget: "string" }
-        - { label: "Featured Image", name: "thumbnail", widget: "image" }
-        - { label: "Body", name: "body", widget: "markdown" }
+    name: "dersler"
+    folder: "_posts/dersler"
+    create: true
+    format: "frontmatter"
+    slug: "{{slug}}"
+    identifier_field: slug
+    summary: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
