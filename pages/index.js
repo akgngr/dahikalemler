@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import Footer from '../components/footer';
 import styles from '../styles/Home.module.css';
 import SwiperCore, { Navigation, Autoplay, Lazy, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -48,9 +49,7 @@ const Home = ({ file }) => (
         {file.map(f => {
           return (
             <SwiperSlide className={styles.items} key={f.props.htmlString.slug}>
-              <div className={styles.img} style={{ background: `url(${f.props.htmlString.image})` }}>
-                {' '}
-              </div>
+              <div className={styles.img} style={{ background: `url(${f.props.htmlString.image})` }}></div>
               <h3>
                 <Link href={'/ders/' + f.props.htmlString.slug}>
                   <a>{f.props.htmlString.title}</a>
@@ -65,6 +64,7 @@ const Home = ({ file }) => (
         })}
       </Swiper>
     </section>
+    <Footer />
   </Layout>
 );
 

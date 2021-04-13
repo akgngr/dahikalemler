@@ -1,7 +1,7 @@
 ---
 title: 'Tarih'
 description: 'Özellikle de ilköğretim sonrası liseye giriş sınavı ve lise sonrası üniversiteye giriş sınavında matematiğin büyük bir önemi vardır.'
-slug: 'matematik'
+slug: 'tarih'
 image: '/image/matematik.jpg'
 ---
 # Matematik

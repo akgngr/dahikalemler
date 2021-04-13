@@ -8,7 +8,8 @@
     @apply font-semibold text-4xl pb-6
 }
 .items{
-    @apply pl-4 pr-4
+    height: 550px;
+    @apply pl-4 pr-4 relative
 }
 .items h3{
     @apply font-semibold text-2xl pt-6 pb-2 text-black
@@ -17,5 +18,6 @@
     @apply w-full h-72 bg-no-repeat bg-cover
 }
 .button{
-    @apply rounded-full p-4 bg-yellow-600 text-white mt-6 mb-4
+
+    @apply rounded-b p-3 bg-yellow-600 text-white  absolute bottom-0 text-sm
 }

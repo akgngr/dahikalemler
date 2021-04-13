@@ -1,7 +1,7 @@
 ---
 title: 'Kimya'
 description: 'Özellikle de ilköğretim sonrası liseye giriş sınavı ve lise sonrası üniversiteye giriş sınavında matematiğin büyük bir önemi vardır.'
-slug: 'matematik'
+slug: 'kimya'
 image: '/image/matematik.jpg'
 ---
 # Matematik

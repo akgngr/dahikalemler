@@ -83,6 +83,27 @@ collections:
           - { label: 'Açıklama 3', name: 'description3', widget: 'string' }
           - { label: 'Hizmet 4', name: 'hizmet4', widget: 'string' }
           - { label: 'Açıklama 4', name: 'description4', widget: 'text' }
+      - label: 'Footer'
+        name: 'footer'
+        file: 'content/footer.md'
+        fields:
+          - { label: 'Şube 1 Harita', name: 'sube1_map', widget: 'string' }
+          - { label: 'Şube 1 Tel', name: 'sube1_tel', widget: 'string' }
+          - { label: 'Hizmet 2', name: 'sube1_mail', widget: 'string' }
+          - { label: 'Açıklama 2', name: 'sube2_map', widget: 'string' }
+          - { label: 'Hizmet 3', name: 'sube2_tel', widget: 'string' }
+          - { label: 'Açıklama 3', name: 'sube2_mail', widget: 'string' }
+          - { label: 'Hizmet 4', name: 'alt_footer', widget: 'text' }
+          - { label: 'Hizmet 2', name: 'youtube', widget: 'string' }
+          - { label: 'Açıklama 2', name: 'twitter', widget: 'string' }
+          - { label: 'Hizmet 3', name: 'facebook', widget: 'string' }
+          - { label: 'Açıklama 3', name: 'instagram', widget: 'string' }
+          - label: 'Linkler'
+            name: 'linkler'
+            widget: list
+            fields:
+              - { label: 'Link Adı', name: 'name', widget: 'string' }
+              - { label: 'Adresi', name: 'url', widget: 'string' }
   - label: "Blog"
     name: "blog"
     folder: "_posts/blog"
