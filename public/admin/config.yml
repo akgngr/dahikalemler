@@ -55,6 +55,7 @@ collections:
           - label: 'Etkinlikler'
             name: 'etkinlikler'
             widget: list
+            disableAdd: true
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'text' }
@@ -99,7 +100,7 @@ collections:
     format: "frontmatter"
     slug: "{{slug}}"
     identifier_field: slug
-    summary: "{{name}}"
+    summary: "{{title}}"
     fields:
       - { label: "Başlık", name: "title", widget: "string" }
       - { label: "Açıklama", name: "description", widget: "text" }
