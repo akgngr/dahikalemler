@@ -7,10 +7,10 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import Footer from '../components/footer';
 import styles from '../styles/Home.module.css';
 import SwiperCore, { Navigation, Autoplay, Lazy, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Contact from '../components/contact';
 SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
 
 const Home = ({ file }) => (
@@ -64,7 +64,7 @@ const Home = ({ file }) => (
         })}
       </Swiper>
     </section>
-    <Footer />
+    <Contact />
   </Layout>
 );
 

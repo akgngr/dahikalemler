@@ -1,6 +1,6 @@
 .hero{
     background: url("/image/bg_1.jpg");
-    z-index: 100;
+    z-index: 1;
     @apply w-full bg-cover bg-no-repeat bg-center h-80 text-white relative
 }
 .herocontent{

@@ -1,28 +1,15 @@
 ---
 title: 'Edebiyat'
-description: 'Özellikle de ilköğretim sonrası liseye giriş sınavı ve lise sonrası üniversiteye giriş sınavında matematiğin büyük bir önemi vardır.'
+description: 'Dil, bir toplumun ortak değerler üzerinde anlaşabilmesi, o toplumun sorunlarını konuşarak çözmesi açısından en önemli etkendir.'
 slug: 'edebiyat'
-image: '/image/matematik.jpg'
+image: '/image/edebiyat.jpg'
 ---
-# Matematik
-Özellikle de ilköğretim sonrası liseye giriş sınavı ve lise sonrası üniversiteye giriş sınavında matematiğin büyük bir önemi vardır. Çünkü elde edilecek yerleştirme puanında rakiplere fark atmak için matematikten net çıkarmak gerekiyor. Nitekim öğrencilerin pek çoğu sözelde bir şekilde başarı gösterirken, matematikte başarı göstermek ise görece daha zorlu olmaktadır. Bu aşamada matematikte iyi bir net çıkaran öğrencinin iyi bir puan elde etmesi de mümkün olacağından istediği liseyi tercih etmesi ve okumak istediği yüksek öğretim programına yerleşmesi mümkün olacaktır.
+## Edebiyat
+Dil, bir toplumun ortak değerler üzerinde anlaşabilmesi, o toplumun sorunlarını konuşarak çözmesi 
+açısından en önemli etkendir. Toplu yaşamayı kolaylaştırmada en önemli araç olan dil, öğrenim ve 
+öğretimde de anahtardır. Bilgi aktarmayı ve bilgi biriktirmeyi sadece onunla gerçekleştirebiliriz. 
+Uygarlığın ulaştığı noktayı da dilin varlığına bağlayabiliriz.
 
-Sınavlarda Daha Fazla Matematik Sorusu Yapmak
-Sınavlarda matematik sorularını çözmek zor değil ancak öncesinde iyi bir hazırlık yapmış olmak gerekiyor. Bu aşamada sizlere sunabileceğimiz başlıca öneriler;
+Türk Dili ve Edebiyatı dersleri işlediği konular itibariyle dille ilgili hedeflere yöneliktir. Bu hedefler doğrultusunda dil ve edebiyat öğretiminin birbirinden soyutlanmadan yürütülmesi bir amaçtır. Dilimizin temel kurallarını öğrenip onu iyi kullanan bireyler yetiştirmek, en önemli amacımızdır. Çünkü dil, bir insan topluluğunun “ulus” kimliğini kazanmasında ve onu korumasında en önemli etkendir. Bu amaçlar doğrultusunda elde edilecek kazanımlar, alandaki başarıyla beraber anlama ve kavramayı da artıracağı için genel başarının artışına doğru atılan ilk adımı oluşturur.
 
-- Sınavda sorumlu olduğunuz konuları sıralandırın
-
-- Her bir konuyu sırasıyla öğrenin ve örnek sorular çözün
-
-- Öğrendiğiniz konular ile ilgili sürekli tekrar soru örnekleri çözün
-
-- Sınava 2-3 ay kadar deneme sınavlarını haftalık olarak çözmeye başlayın ve bu deneme sınavlarından elde ettiğiniz sonuçlar doğrultusunda eksikliklerinize ve hatalarınıza yoğunlaşın
-
-- Eğer matematik temeliniz zayıf ise öncelikli olarak temel matematik konularını öğrenmekle başlayın
-
-Tüm bu kriterleri dikkate aldığınız zaman sınavda iyi bir net başarısı elde etmeniz de mümkün olacaktır.
-
-## Matematik Özel Dersi ile Sınavlara Hazırlanmak
-Matematik sınavında iyi bir başarı elde etmek için özel ders almak en iyi seçeneklerden birisidir. Çünkü özel ders alarak, öğretmenin sınav için öğrenciyi en iyi bir şekilde eğitmesi mümkün olmaktadır. Özellikle de öğrencinin mevcut seviyesi doğrultusunda hazırlanacak sınava çalışma programı aksaksız bir şekilde uygulandığı taktirde sınav zamanında öğrenci motivasyonu yüksek bir şekilde sınava dahil olacak ve iyi bir başarı elde edecektir. Bu bağlamda sizlere alanında uzman öğretmen kadrosu ile hizmet vermeye hazırız. Oldukça uygun fiyatlar dahilinde sınavlara hazırlık ya da genel matematik özel dersi vermekteyiz.
-
-Matematik sınavlarında yüksek not almanın temelinde motivasyon yatmaktadır ve bizler çalışmalarımızı en net, anlaşılır bir şekilde sürdürerek öğrencilerimizin tüm konuları anlamasını sağlıyoruz. Bu sayede motivasyonu yüksek olan öğrencilerimiz sınava daha da istekli bir şekilde çalışıyorlar ve böylelikle iyi bir başarı elde ediyorlar. Daha fazla bilgi ve uygun fiyat teklifimiz için lütfen iletişime geçiniz.
+Edebiyat öğretimi, beğenilerimizi ve kültürümüzü geliştirirken öğrencinin ana dilinde olgunluğa ulaşmasıyla, dilin inceliklerine varmasını, düşüncelerini çeşitlendirmesini, yapıcı olmasını sağlar. Türk Dili ve Edebiyatı dersinde edebiyatımızdaki seçkin örnekler aracılığıyla edebi türler öğretilmektedir. Metinlerden yola çıkılarak edebiyat bilgilerinin verilmesi, öğrencilerimizi ezbercilikten uzaklaştırarak konuları kavramaları, yeteneklerini geliştirici yöntemler uygulanarak da edebiyatı sevmeleri amaçlanır. Türk Dili ve Edebiyatı dersi öğrencilerin dinlediklerini, okuduklarını incelik ve derinlikleriyle kavrayan bireyler olmalarını amaçlarken gerek sözlü gerek yazılı dilde Türkçenin söylenişine ve estetik görünüşüne özen göstermelerini beraberinde getirir. Öğrencilerimize Türk ve Dünya Edebiyatının seçkin eserleri okutularak, onlara edebiyatın kültürel yönü tanıtılır ve bu kültürlerden yararlanarak, öğrencilerimizin estetik yönden geliştirilmeleri hedeflenir.

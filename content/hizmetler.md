@@ -1,10 +1,10 @@
 ---
 hizmet1: "Uzman Öğretmenler"
-description1: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+description1: "Alanında uzman eğitim kadromuzla öğrencilerimize kaliteli eğitim vermekteyiz."
 hizmet2: "Birebir Özel Ders"
-description2: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+description2: "Öğrencilerimizin yetiştiremediği konuları öğretmenlerimiz ile bire bir işleyerek eksiklerini tamamlıyoruz."
 hizmet3: "Yeterli Kaynaklar"
-description3: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+description3: "Kaliteli ders işlemek için öğrencilerimize yetecek kadar kaynağımız mevcuttur."
 hizmet4: "Sosyal Klüpler"
-description4: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+description4: "Sadece ders odaklı değil öğrencilerimizi sosyal hayata daha iyi adapte olmaları için rehberlik yapıyoruz."
 ---

@@ -1,0 +1,54 @@
+.section{
+    background-image: url("/image/bg_5.jpg");
+    @apply bg-no-repeat bg-cover relative
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .7;
+    background: #fd6100;
+    background: -moz-linear-gradient(45deg,#fd6100 0%,#0d1128 100%);
+    background: -webkit-gradient(left bottom,right top,color-stop(0%,#fd6100),color-stop(100%,#0d1128));
+    background: -webkit-linear-gradient(
+            45deg
+            ,#fd6100 0%,#0d1128 100%);
+    background: -o-linear-gradient(45deg,#fd6100 0%,#0d1128 100%);
+    background: -ms-linear-gradient(45deg,#fd6100 0%,#0d1128 100%);
+    background: linear-gradient(
+            45deg
+            ,#fd6100 0%,#0d1128 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6100',endColorstr='#0d1128',GradientType=1 );
+}
+.govde{
+    z-index: 1000;
+    @apply w-11/12 m-auto grid grid-cols-2 text-white relative pt-12 pb-12
+}
+.govde h3{
+    @apply font-semibold text-3xl pb-4
+}
+.formalani{
+    @apply py-12 md:px-5
+}
+.formalani p{
+    @apply pb-8
+}
+.form{
+    @apply grid grid-cols-2 pt-6
+}
+.form div{
+    @apply flex flex-col mr-8
+}
+.form input, .form textarea{
+    @apply border-solid border-b bg-transparent h-14 border-gray-400 pt-2 pb-2 mt-2 mb-2 pl-2 pr-2 focus-within:bg-opacity-100 focus-within:border-transparent
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    @apply text-white font-light
+}
+.form button{
+    @apply bg-yellow-600 rounded-full py-4 mt-4 hover:-rotate-6 hover:bg-transparent hover:border-yellow-600 border-solid border hover:text-yellow-600 border-yellow-600
+}

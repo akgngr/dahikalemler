@@ -1,28 +1,16 @@
 ---
 title: 'Tarih'
-description: 'Özellikle de ilköğretim sonrası liseye giriş sınavı ve lise sonrası üniversiteye giriş sınavında matematiğin büyük bir önemi vardır.'
+description: 'Tarih bir aynadır ve insanların tarihten alabilecekleri önemli dersler vardır.'
 slug: 'tarih'
-image: '/image/matematik.jpg'
+image: '/image/tarih.jpg'
 ---
-# Matematik
-Özellikle de ilköğretim sonrası liseye giriş sınavı ve lise sonrası üniversiteye giriş sınavında matematiğin büyük bir önemi vardır. Çünkü elde edilecek yerleştirme puanında rakiplere fark atmak için matematikten net çıkarmak gerekiyor. Nitekim öğrencilerin pek çoğu sözelde bir şekilde başarı gösterirken, matematikte başarı göstermek ise görece daha zorlu olmaktadır. Bu aşamada matematikte iyi bir net çıkaran öğrencinin iyi bir puan elde etmesi de mümkün olacağından istediği liseyi tercih etmesi ve okumak istediği yüksek öğretim programına yerleşmesi mümkün olacaktır.
+## Tarih
 
-Sınavlarda Daha Fazla Matematik Sorusu Yapmak
-Sınavlarda matematik sorularını çözmek zor değil ancak öncesinde iyi bir hazırlık yapmış olmak gerekiyor. Bu aşamada sizlere sunabileceğimiz başlıca öneriler;
+Tarih bir aynadır ve insanların tarihten alabilecekleri önemli dersler vardır. Atalarımız geçmişte büyük devletler kurarak büyük uygarlıklara sahip olmuşlardır. Osman Gazi, cihan devletini kuralı 700 yıl oldu. Üç kıtada yüzyıllarca hükümranlığı sürdüren Osmanlı Devleti’nin 700. yılı kutlama etkinlikleri yurt içi ve yurt dışında çeşitli projelerle gerçekleşmektedir. Osmanlı, en geniş ve tek hanedanla tarihte az rastlanan bir imparatorluk kurarak “siyasi, ekonomik ve kültürel” yapısıyla dünyaya örnek olmuştur. Geçmişle bağlarımızı güçlü bir biçimde kurabilmek için 1999 yılı büyük önem taşımaktadır. 1999 yılı Osmanlı ile Cumhuriyetin buluşmasıdır. Vatanını, milletini ve ulusal tarihini seven herkesin 700. yıldönümü kutlamalarını ulusal buluşma durumuna getirmek için heyecanla, özen göstermesi gereklidir.
 
-- Sınavda sorumlu olduğunuz konuları sıralandırın
+Cumhuriyetimizin 75’inci yılı kutlamalarında olduğu gibi, bu kutlamalarda da, ülkemizde birlik ve beraberliğin pekiştirilmesi, ortak değerlerimizin tanıtılması amacı taşınmalıdır.
 
-- Her bir konuyu sırasıyla öğrenin ve örnek sorular çözün
+Böylece,Türkiye Cumhuriyeti Devleti’nin geçmişi ile geleceği arasında köprü kurulması ve bugünün daha iyi anlaşılması sağlanacak, kendimizi tanıma ve dünyaya tanıtma fırsatı doğacaktır. Eğer bir millet büyükse, kendini tanımakla daha da büyük olur. Cumhuriyetimizin kurucusu Ulu Önder Atatürk, “Tarih, millî kahramanlığın geliştirilmesi için en büyük kaynaktır. Yetiştirme işinin başında bulunanlar, bundan hakkı ile faydalanabilirse; milletin her ferdi birer kahraman olur ve o milletin sırtı yere gelmez.” demiştir. Tarih, yaşamın zaman içinde akışı, geçmişin yazılı belgelere dayanılarak bilinen bölümü; insanlığın başlangıcından bugüne kadar olan evrimi üstünde edinilen bilgidir.
 
-- Öğrendiğiniz konular ile ilgili sürekli tekrar soru örnekleri çözün
+İnsan her zaman bugününü dünle doğrulamak için nereden geldiğini, kendinden önce neler olduğunu bulmaya çalışmalıdır. Bizim milletimiz Orta Asya’nın Altay yaylasında yetişmiş eski bir millettir. Osmanlının uzun ömrü ise, binlerce yıllık Türk devletler tarihinin her alanda mükemmel biçimde kurumsallaşmasının en canlı örneğidir. Bugün Kosova ile ilgileniyoruz, çünkü, Osmanlının torunlarıyız, gölgesi üzerimizde....
 
-- Sınava 2-3 ay kadar deneme sınavlarını haftalık olarak çözmeye başlayın ve bu deneme sınavlarından elde ettiğiniz sonuçlar doğrultusunda eksikliklerinize ve hatalarınıza yoğunlaşın
-
-- Eğer matematik temeliniz zayıf ise öncelikli olarak temel matematik konularını öğrenmekle başlayın
-
-Tüm bu kriterleri dikkate aldığınız zaman sınavda iyi bir net başarısı elde etmeniz de mümkün olacaktır.
-
-## Matematik Özel Dersi ile Sınavlara Hazırlanmak
-Matematik sınavında iyi bir başarı elde etmek için özel ders almak en iyi seçeneklerden birisidir. Çünkü özel ders alarak, öğretmenin sınav için öğrenciyi en iyi bir şekilde eğitmesi mümkün olmaktadır. Özellikle de öğrencinin mevcut seviyesi doğrultusunda hazırlanacak sınava çalışma programı aksaksız bir şekilde uygulandığı taktirde sınav zamanında öğrenci motivasyonu yüksek bir şekilde sınava dahil olacak ve iyi bir başarı elde edecektir. Bu bağlamda sizlere alanında uzman öğretmen kadrosu ile hizmet vermeye hazırız. Oldukça uygun fiyatlar dahilinde sınavlara hazırlık ya da genel matematik özel dersi vermekteyiz.
-
-Matematik sınavlarında yüksek not almanın temelinde motivasyon yatmaktadır ve bizler çalışmalarımızı en net, anlaşılır bir şekilde sürdürerek öğrencilerimizin tüm konuları anlamasını sağlıyoruz. Bu sayede motivasyonu yüksek olan öğrencilerimiz sınava daha da istekli bir şekilde çalışıyorlar ve böylelikle iyi bir başarı elde ediyorlar. Daha fazla bilgi ve uygun fiyat teklifimiz için lütfen iletişime geçiniz.

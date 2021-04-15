@@ -3,12 +3,12 @@
 }
 .navbartop {
   @apply grid grid-cols-1  lg:grid-cols-5
-   mr-auto space-x-6;
+   mr-auto space-x-4;
 }
 .button {
   height: 42px;
   background-color: #fd5f00;
-  @apply px-4 text-white;
+  @apply px-4 text-white flex justify-center items-center;
 }
 .ortala {
   @apply flex justify-center items-center;

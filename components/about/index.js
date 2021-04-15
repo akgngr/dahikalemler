@@ -1,18 +1,20 @@
-import { Component } from 'react'
+import { Component } from 'react';
 import { attributes, react as AboutCompnent } from '../../content/about.md';
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 import CountUp from 'react-countup';
 
 class about extends Component {
   render() {
     let { title, description1, description2, ogretmen, ogrenci, sube, sinif } = attributes;
-    return(
+    return (
       <section className={styles.section}>
         <div className={styles.overlay}></div>
         <div className={styles.about}>
           <div className={styles.aboutimg}>
-            <a href="https://vimeo.com/45830194"
-               className="h-20 w-20 flex justify-center items-center rounded-full bg-white">
+            <a
+              href="https://vimeo.com/45830194"
+              className="h-20 w-20 flex justify-center items-center rounded-full bg-white"
+            >
               <span className={styles.iconplay}></span>
             </a>
           </div>
@@ -22,6 +24,7 @@ class about extends Component {
             <p>{description2}</p>
           </div>
         </div>
+        {/*
         <div className={styles.count}>
           <div className={styles.countelement}>
             <strong>
@@ -48,8 +51,9 @@ class about extends Component {
             <span>Sınıflarımız</span>
           </div>
         </div>
+          */}
       </section>
-    )
+    );
   }
 }
 
