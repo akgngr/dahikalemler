@@ -110,19 +110,19 @@ collections:
             fields:
               - { label: 'Link Adı', name: 'name', widget: 'string' }
               - { label: 'Adresi', name: 'url', widget: 'string' }
-      # - label: 'Yorumlar'
-      #   name: 'ogrenciyorumlari'
-      #   file: 'content/ogrenciyorumlari.md'
-      #   fields:
-      #     - { label: 'Başlık', name: 'title', widget: 'string' }
-      #     - label: 'Yorumlar'
-      #     - name: 'comment'
-      #     - widget: list
-      #     - fields:
-      #         - { label: 'İsim Soyisim', name: 'isim', widget: 'string' }
-      #         - { label: 'Resim', name: 'image', widget: 'image' }
-      #         - { label: 'Statü', name: 'statu', widget: 'string' }
-      #         - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
+      - label: 'Yorumlar'
+        name: 'ogrenciyorumlari'
+        file: 'content/ogrenciyorumlari.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - label: 'Yorumlar'
+            name: 'comment'
+            widget: list
+            fields:
+              - { label: 'İsim Soyisim', name: 'isim', widget: 'string' }
+              - { label: 'Resim', name: 'image', widget: 'image' }
+              - { label: 'Statü', name: 'statu', widget: 'string' }
+              - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
       - label: 'Duyurular'
         name: 'duyurular'
         file: 'content/duyurular.md'
