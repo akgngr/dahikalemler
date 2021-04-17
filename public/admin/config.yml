@@ -28,6 +28,7 @@ collections:
           - { label: 'Başlık', name: 'title', widget: 'string' }
           - { label: 'Tarih', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+
   - name: 'module'
     label: 'Modul'
     files:
@@ -120,6 +121,7 @@ collections:
           - { label: 'Resmi', name: 'image', widget: 'image'}
           - { label: 'Statü', name: 'statu', widget: 'string' }
           - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
+
   - label: "Blog"
     name: "blog"
     folder: "_posts/blog"
@@ -130,6 +132,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - label: "Dersler"
     name: "dersler"
     folder: "_posts/dersler"
@@ -144,6 +147,7 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - label: "Duyurular"
     name: "duyurular"
     file: "content/duyurular.md"
@@ -159,7 +163,7 @@ collections:
           - { label: 'Tarih', name: 'date', widget: 'datetime' }
   - label: "Şubelerimiz"
     name: "subeler"
-    fields:
+    files:
       - label: 'Çekmeköy Lise Şubesi'
         name: 'cekmekoylisesubesi'
         file: 'content/cekmekoylise.md'
