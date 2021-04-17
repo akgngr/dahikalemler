@@ -114,14 +114,14 @@ collections:
               - { label: 'Link Adı', name: 'name', widget: 'string' }
               - { label: 'Adresi', name: 'url', widget: 'string' }
       - label: 'Yorumlar'
-        name: 'yorumlars'
+        name: 'ogrenciyorumlari'
         file: 'content/ogrenciyorumlari.md'
         fields:
           - label: "Yorumlar"
           - name: "yorumlar"
           - widget: list
           - fields:
-            - { label: 'İsim Soyisim', name: 'name', widget: 'string' }
+            - { label: "İsim Soyisim", name: "isim", widget: 'string' }
             - { label: 'Resmi', name: 'image', widget: 'image'}
             - { label: 'Statü', name: 'statu', widget: 'string' }
             - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
