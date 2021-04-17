@@ -1,6 +1,6 @@
 ---
 title: "Öğrenci yorumları"
-yorumlar:
+comment:
     - isim: "Ahmet M."
       image: "/image/User-16.png"
       statu: "Öğrenci"
