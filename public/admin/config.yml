@@ -114,7 +114,7 @@ collections:
               - { label: 'Link Adı', name: 'name', widget: 'string' }
               - { label: 'Adresi', name: 'url', widget: 'string' }
       - label: 'Yorumlar'
-        name: 'yorumlar'
+        name: 'yorumlars'
         file: 'content/ogrenciyorumlari.md'
         fields:
           - label: "Yorumlar"
