@@ -169,11 +169,11 @@ collections:
         file: 'content/cekmekoylise.md'
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
-          - { label: 'Açıklama', name: 'description', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'text' }
           - label: 'Galeri'
             name: 'galeri'
             widget: list
-            field:
+            fields:
               - { label: 'Başlık', name: 'title', widget: 'string' }
               - { label: 'Galeri', name: 'galeri', widget: 'image' }
       - label: 'Çekmeköy Lise Şubesi'
@@ -181,11 +181,11 @@ collections:
         file: 'content/cekmekoyortaokul.md'
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
-          - { label: 'Açıklama', name: 'description', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'text' }
           - label: 'Galeri'
             name: 'galeri'
             widget: list
-            field:
+            fields:
               - { label: 'Başlık', name: 'title', widget: 'string' }
               - { label: 'Galeri', name: 'galeri', widget: 'image' }
       - label: 'Bulgurlu Şubesi'
@@ -197,6 +197,6 @@ collections:
           - label: 'Galeri'
             name: 'galeri'
             widget: list
-            field:
+            fields:
               - { label: 'Başlık', name: 'title', widget: 'string' }
               - { label: 'Galeri', name: 'galeri', widget: 'image' }
