@@ -162,7 +162,7 @@ collections:
       - { label: "Başlık", name: "title", widget: "string" }
       - { label: "Açıklama", name: "description", widget: "text" }
       - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Şubelerimiz"
@@ -178,8 +178,8 @@ collections:
             name: 'galeri'
             widget: list
             fields:
-              - { label: 'Başlık', name: 'title', widget: 'string' }
-              - { label: 'Galeri', name: 'galeri', widget: 'image' }
+              - { label: 'Başlık', name: 'name', widget: 'string' }
+              - { label: 'Galeri Resmi', name: 'image', widget: 'image' }
       - label: 'Çekmeköy Lise Şubesi'
         name: 'cekmekoyortaokulsubesi'
         file: 'content/cekmekoyortaokul.md'
@@ -190,8 +190,8 @@ collections:
             name: 'galeri'
             widget: list
             fields:
-              - { label: 'Başlık', name: 'title', widget: 'string' }
-              - { label: 'Galeri', name: 'galeri', widget: 'image' }
+              - { label: 'Başlık', name: 'name', widget: 'string' }
+              - { label: 'Galeri Resmi', name: 'image', widget: 'image' }
       - label: 'Bulgurlu Şubesi'
         name: 'bulgurlusubesi'
         file: 'content/bulgurlu.md'
@@ -202,5 +202,5 @@ collections:
             name: 'galeri'
             widget: list
             fields:
-              - { label: 'Başlık', name: 'title', widget: 'string' }
-              - { label: 'Galeri', name: 'galeri', widget: 'image' }
+              - { label: 'Başlık', name: 'name', widget: 'string' }
+              - { label: 'Galeri Resmi', name: 'image', widget: 'image' }

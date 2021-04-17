@@ -1,7 +1,7 @@
 ---
 title: "Duyurular"
 description: "Kurumumuzda ileriki günlerde yapacağımız sosyal etkinlikler, deneme sınavları ve gezi gibi etkinlik faaliyetlerinin duyurularını bu alanda paylaşacağız."
-duyurular:
+duyurulist:
     - name: "Deneme duyurusu"
       description: "Deneme duyurusunun açıklaması"
       date: 2019-03-17T19:31:20.591Z
