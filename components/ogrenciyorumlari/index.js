@@ -9,7 +9,7 @@ SwiperCore.use([Pagination, Autoplay, A11y, Lazy, EffectFade]);
 
 class yorumlar extends Component {
   render() {
-    let { yorumlar } = attributes;
+    let { comment } = attributes;
     return (
       <section className={styles.section}>
         <Swiper
@@ -21,7 +21,7 @@ class yorumlar extends Component {
           effect={'fade'}
           loop={true}
         >
-          {yorumlar.map(yorum => (
+          {comment.map(yorum => (
             <SwiperSlide key={yorum.image}>
               <div className={styles.card}>
                 <div className={styles.cardimg}>
