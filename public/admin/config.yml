@@ -117,10 +117,14 @@ collections:
         name: 'yorumlar'
         file: 'content/ogrenciyorumlari.md'
         fields:
-          - { label: 'İsim Soyisim', name: 'name', widget: 'string' }
-          - { label: 'Resmi', name: 'image', widget: 'image'}
-          - { label: 'Statü', name: 'statu', widget: 'string' }
-          - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
+          - label: "Yorumlar"
+          - name: "yorumlar"
+          - widget: list
+          - fields:
+            - { label: 'İsim Soyisim', name: 'name', widget: 'string' }
+            - { label: 'Resmi', name: 'image', widget: 'image'}
+            - { label: 'Statü', name: 'statu', widget: 'string' }
+            - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
       - label: "Duyurular"
         name: "duyurular"
         file: "content/duyurular.md"
