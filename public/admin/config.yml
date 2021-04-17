@@ -121,6 +121,19 @@ collections:
           - { label: 'Resmi', name: 'image', widget: 'image'}
           - { label: 'Statü', name: 'statu', widget: 'string' }
           - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
+      - label: "Duyurular"
+        name: "duyurular"
+        file: "content/duyurular.md"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Açıklama", name: "description", widget: "text" }
+          - label: 'Duyurlar'
+            name: 'duyurulist'
+            widget: list
+            fields:
+              - { label: 'Başlık', name: 'name', widget: 'string' }
+              - { label: 'Açıklama', name: 'description', widget: 'string' }
+              - { label: 'Tarih', name: 'date', widget: 'datetime' }
 
   - label: "Blog"
     name: "blog"
@@ -148,19 +161,6 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - label: "Duyurular"
-    name: "duyurular"
-    file: "content/duyurular.md"
-    fields:
-      - { label: "Başlık", name: "title", widget: "string" }
-      - { label: "Açıklama", name: "description", widget: "text" }
-      - label: 'Duyurlar'
-        name: 'duyurular'
-        widget: list
-        fields:
-          - { label: 'Başlık', name: 'name', widget: 'string' }
-          - { label: 'Açıklama', name: 'description', widget: 'string' }
-          - { label: 'Tarih', name: 'date', widget: 'datetime' }
   - label: "Şubelerimiz"
     name: "subeler"
     files:
