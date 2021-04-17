@@ -7,19 +7,27 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
-      - label: 'Home'
-        name: 'home'
-        file: 'content/home.md'
+      - label: 'Hakkımızda'
+        name: 'hakkimizda'
+        file: 'content/hakkimizda.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Tarih', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-          - label: 'Cats'
-            name: 'cats'
-            widget: list
-            fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+      - label: 'Eğitim Felsefemiz'
+        name: 'egitim-felsefesi'
+        file: 'content/felsefe.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Tarih', name: 'date', widget: 'datetime' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Misyon ve Vizyon'
+        name: 'misyon-vizyon'
+        file: 'content/ilkeler.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Tarih', name: 'date', widget: 'datetime' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'module'
     label: 'Modul'
     files:
@@ -104,6 +112,14 @@ collections:
             fields:
               - { label: 'Link Adı', name: 'name', widget: 'string' }
               - { label: 'Adresi', name: 'url', widget: 'string' }
+      - label: 'Yorumlar'
+        name: 'yorumlar'
+        file: 'content/ogrenciyorumlari.md'
+        fields:
+          - { label: 'İsim Soyisim', name: 'name', widget: 'string' }
+          - { label: 'Resmi', name: 'image', widget: 'image'}
+          - { label: 'Statü', name: 'statu', widget: 'string' }
+          - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
   - label: "Blog"
     name: "blog"
     folder: "_posts/blog"
@@ -128,3 +144,56 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Duyurular"
+    name: "duyurular"
+    folder: "content/duyurular.md"
+    format: "frontmatter"
+    fields:
+      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Açıklama", name: "description", widget: "text" }
+      - label: 'Duyurlar'
+        name: 'duyurular'
+        widget: list
+        fields:
+          - { label: 'Başlık', name: 'name', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'string' }
+          - { label: 'Tarih', name: 'date', widget: 'datetime' }
+  - label: "Şubelerimiz"
+    name: "subeler"
+    fields:
+      - label: 'Çekmeköy Lise Şubesi'
+        name: 'cekmekoylisesubesi'
+        file: 'content/cekmekoylise.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'string' }
+          - label: 'Galeri'
+            name: 'galeri'
+            widget: list
+            field:
+              - { label: 'Başlık', name: 'title', widget: 'string' }
+              - { label: 'Galeri', name: 'galeri', widget: 'image' }
+      - label: 'Çekmeköy Lise Şubesi'
+        name: 'cekmekoyortaokulsubesi'
+        file: 'content/cekmekoyortaokul.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'string' }
+          - label: 'Galeri'
+            name: 'galeri'
+            widget: list
+            field:
+              - { label: 'Başlık', name: 'title', widget: 'string' }
+              - { label: 'Galeri', name: 'galeri', widget: 'image' }
+      - label: 'Bulgurlu Şubesi'
+        name: 'bulgurlusubesi'
+        file: 'content/bulgurlu.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'string' }
+          - label: 'Galeri'
+            name: 'galeri'
+            widget: list
+            field:
+              - { label: 'Başlık', name: 'title', widget: 'string' }
+              - { label: 'Galeri', name: 'galeri', widget: 'image' }

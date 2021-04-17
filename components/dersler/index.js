@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const Dersler = ({ slugs, file }) => (
+const Dersler = ({ file }) => (
   <div>
     {file.map(f => {
       return (
@@ -14,9 +14,7 @@ const Dersler = ({ slugs, file }) => (
         </div>
       );
     })}
-    {slugs.map(s => {
-      console.log(s);
-    })}
+    -
   </div>
 );
 

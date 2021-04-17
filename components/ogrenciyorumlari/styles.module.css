@@ -1,0 +1,24 @@
+.section{
+    @apply pt-32 pb-16
+}
+.card{
+    @apply relative pb-16 grid grid-cols-3 w-11/12 md:w-6/12 m-auto bg-white
+}
+.cardimg{
+    @apply md:w-44 w-28
+}
+.cardbody{
+    @apply col-span-2 flex flex-col
+}
+.quote{
+    @apply absolute opacity-20
+}
+.mesaj{
+    @apply pt-8
+}
+.name{
+    @apply pt-4 font-semibold
+}
+.statu{
+    @apply pt-2 font-light text-sm text-yellow-700
+}

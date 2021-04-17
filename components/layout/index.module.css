@@ -8,7 +8,7 @@
 .button {
   height: 42px;
   background-color: #fd5f00;
-  @apply px-4 text-white flex justify-center items-center;
+  @apply px-4 text-white flex justify-center items-center ;
 }
 .ortala {
   @apply flex justify-center items-center;

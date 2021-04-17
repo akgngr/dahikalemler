@@ -9,11 +9,12 @@
     "export": "next export"
   },
   "dependencies": {
-    "@headlessui/react": "^0.3.2",
+    "@headlessui/react": "^1.0.0",
     "@tailwindcss/typography": "^0.4.0",
     "axios": "^0.21.1",
     "formik": "^2.2.6",
     "marked": "^2.0.1",
+    "moment": "^2.29.1",
     "next": "10.1.2",
     "next-mdx": "^0.6.0",
     "react": "17.0.2",
@@ -21,6 +22,7 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "react-iframe": "^1.8.0",
+    "simple-react-lightbox": "^3.6.6",
     "swiper": "^6.5.3"
   },
   "devDependencies": {

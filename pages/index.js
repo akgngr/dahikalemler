@@ -12,6 +12,7 @@ import SwiperCore, { Navigation, Autoplay, Lazy, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Contact from '../components/contact';
 SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
+import Ogrenciyorumlari from '../components/ogrenciyorumlari';
 
 const Home = ({ file }) => (
   <Layout>
@@ -65,6 +66,7 @@ const Home = ({ file }) => (
       </Swiper>
     </section>
     <Contact />
+    <Ogrenciyorumlari />
   </Layout>
 );
 

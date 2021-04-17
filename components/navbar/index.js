@@ -22,12 +22,8 @@ export default function Navbar({ fixed }) {
           url: '/egitim-felsefemiz',
         },
         {
-          name: 'İlkelerimiz',
-          url: '/ilkelerimiz',
-        },
-        {
-          name: 'Hedeflerimiz',
-          url: '/hedeflerimiz',
+          name: 'Misyon ve Vizyon',
+          url: '/misyon-vizyon',
         },
       ],
     },
@@ -42,6 +38,20 @@ export default function Navbar({ fixed }) {
     {
       name: 'Şubelerimiz',
       url: '/subelerimiz',
+      dropdown: [
+        {
+          name: 'Çekmeköy Lise',
+          url: '/subelerimiz/cekmekoy-lise',
+        },
+        {
+          name: 'Çekmeköy Ortaokul',
+          url: '/subelerimiz/cekmekoy-ortaokul',
+        },
+        {
+          name: 'Bulgurlu',
+          url: '/subelerimiz/bulgurlu',
+        },
+      ],
     },
     {
       name: 'İletişim',
