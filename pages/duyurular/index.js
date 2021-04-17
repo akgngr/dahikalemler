@@ -8,7 +8,7 @@ import Moment from 'moment';
 class duyurular extends Component {
   render() {
     Moment.locale('tr');
-    let { title, description, duyurular } = attributes;
+    let { title, description, duyurulist } = attributes;
     return (
       <Layout>
         <HeroWrap title={title} />
@@ -18,7 +18,7 @@ class duyurular extends Component {
             <p>{description}</p>
           </article>
           <div className={styles.etkinliklist}>
-            {duyurular
+            {duyurulist
               .map((duyuru, k) => (
                 <div className={styles.card} key={k}>
                   <span className="col-span-3 leading-1">
