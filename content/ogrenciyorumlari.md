@@ -1,4 +1,5 @@
 ---
+title: "Öğrenci yorumları"
 yorumlar:
     - isim: "Ahmet M."
       image: "/image/User-16.png"

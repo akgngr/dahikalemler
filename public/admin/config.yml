@@ -69,7 +69,7 @@ collections:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Icon', name: 'icon', allow_add: true, media_folder: 'svg', widget: 'image', add_to_top: true}
-      - label: 'Hakkımızda'
+      - label: 'Anasayfa Hakkımızda'
         name: 'about'
         file: 'content/about.md'
         fields:
@@ -117,14 +117,15 @@ collections:
         name: 'ogrenciyorumlari'
         file: 'content/ogrenciyorumlari.md'
         fields:
+          - { label: "Başlık", name: "title", widget: "string" }
           - label: "Yorumlar"
           - name: "yorumlar"
           - widget: list
           - fields:
-            - { label: "İsim Soyisim", name: "isim", widget: 'string' }
-            - { label: 'Resmi', name: 'image', widget: 'image'}
-            - { label: 'Statü', name: 'statu', widget: 'string' }
-            - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
+              - { label: "İsim Soyisim", name: "isim", widget: 'string' }
+              - { label: 'Resmi', name: 'image', widget: 'image'}
+              - { label: 'Statü', name: 'statu', widget: 'string' }
+              - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
       - label: "Duyurular"
         name: "duyurular"
         file: "content/duyurular.md"
