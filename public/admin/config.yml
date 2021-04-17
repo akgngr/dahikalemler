@@ -146,8 +146,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Duyurular"
     name: "duyurular"
-    folder: "content/duyurular.md"
-    format: "frontmatter"
+    file: "content/duyurular.md"
     fields:
       - { label: "Başlık", name: "title", widget: "string" }
       - { label: "Açıklama", name: "description", widget: "text" }
