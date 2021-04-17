@@ -12,21 +12,18 @@ collections:
         file: 'content/hakkimizda.md'
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
-          - { label: 'Tarih', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Gövde', name: 'body', widget: 'markdown' }
       - label: 'Eğitim Felsefemiz'
         name: 'egitimfelsefesi'
         file: 'content/felsefe.md'
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
-          - { label: 'Tarih', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Misyon ve Vizyon'
         name: 'misyonvizyon'
         file: 'content/ilkeler.md'
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
-          - { label: 'Tarih', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'module'
@@ -123,7 +120,7 @@ collections:
           - widget: list
           - fields:
               - { label: 'İsim Soyisim', name: 'isim', widget: 'string' }
-              - { label: 'Resmi', name: 'image', widget: 'image' }
+              - { label: 'Resim', name: 'image', widget: 'image' }
               - { label: 'Statü', name: 'statu', widget: 'string' }
               - { label: 'Mesajı', name: 'mesaj', widget: 'text' }
       - label: 'Duyurular'
