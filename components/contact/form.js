@@ -22,8 +22,19 @@ const ContactForm = () => {
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
+            fetch('/', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: encode({ 'form-name': 'contact-demo', ...values }),
+            })
+              .then(() => {
+                alert('Success');
+                actions.resetForm();
+              })
+              .catch(() => {
+                alert('Error');
+              })
+              .finally(() => actions.setSubmitting(false));
           }, 400);
         }}
       >
@@ -37,7 +48,7 @@ const ContactForm = () => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit} className={styles.form}>
+          <form onSubmit={handleSubmit} className={styles.form} data-netlify={true}>
             <div>
               <input
                 type="text"

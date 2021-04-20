@@ -52,12 +52,12 @@ const Home = ({ file }) => (
             <SwiperSlide className={styles.items} key={f.props.htmlString.slug}>
               <div className={styles.img} style={{ background: `url(${f.props.htmlString.image})` }}></div>
               <h3>
-                <Link href={'/ders/' + f.props.htmlString.slug}>
+                <Link href={'/kurs/' + f.props.htmlString.slug}>
                   <a>{f.props.htmlString.title}</a>
                 </Link>
               </h3>
               <p>{f.props.htmlString.description}</p>
-              <Link href={'/ders/' + f.props.htmlString.slug}>
+              <Link href={'/kurs/' + f.props.htmlString.slug}>
                 <a className={styles.button}>Devamını Oku</a>
               </Link>
             </SwiperSlide>

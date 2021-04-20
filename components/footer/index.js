@@ -9,12 +9,18 @@ import Link from 'next/link';
 class Footer extends Component {
   render() {
     let {
-      subebir_map,
+      sube1_title,
+      sube1_map,
       sube1_tel,
       sube1_mail,
+      sube2_title,
       sube2_map,
       sube2_tel,
       sube2_mail,
+      sube3_title,
+      sube3_map,
+      sube3_tel,
+      sube3_mail,
       alt_footer,
       twitter,
       facebook,
@@ -27,19 +33,19 @@ class Footer extends Component {
         <footer className={styles.footer}>
           <div className={styles.ftcontainer}>
             <div>
-              <h3>Çekmeköy Şubemiz</h3>
+              <h3>{sube1_title}</h3>
               <div>
                 <span>
                   <FaMapMarkerAlt />
                 </span>
-                <span>{subebir_map}</span>
+                <span>{sube1_map}</span>
               </div>
               <div>
                 <span>
                   <FaPhone />
                 </span>
                 <span>
-                  <a href={'tel:' + sube2_tel}>{sube2_tel}</a>{' '}
+                  <a href={'tel:' + sube1_tel}>{sube1_tel}</a>
                 </span>
               </div>
               <div>
@@ -47,12 +53,12 @@ class Footer extends Component {
                   <FaEnvelope />
                 </span>
                 <span>
-                  <a href={'mailto:' + sube2_mail}>{sube2_mail}</a>
+                  <a href={'mailto:' + sube1_mail}>{sube1_mail}</a>
                 </span>
               </div>
             </div>
             <div>
-              <h3>Bulgurlu Şubemiz</h3>
+              <h3>{sube2_title}</h3>
               <div>
                 <span>
                   <FaMapMarkerAlt />
@@ -77,6 +83,31 @@ class Footer extends Component {
               </div>
             </div>
             <div>
+              <h3>{sube3_title}</h3>
+              <div>
+                <span>
+                  <FaMapMarkerAlt />
+                </span>
+                <span>{sube3_map}</span>
+              </div>
+              <div>
+                <span>
+                  <FaPhone />
+                </span>
+                <span>
+                  <a href={'tel:' + sube3_tel}>{sube3_tel}</a>{' '}
+                </span>
+              </div>
+              <div>
+                <span>
+                  <FaEnvelope />
+                </span>
+                <span>
+                  <a href={'mailto:' + sube3_mail}>{sube3_mail}</a>
+                </span>
+              </div>
+            </div>
+            <div>
               <h3>Hızlı Erişim</h3>
               <ul className={styles.linkler}>
                 {linkler.map(l => (
@@ -88,33 +119,32 @@ class Footer extends Component {
                 ))}
               </ul>
             </div>
-            <div>
-              <h3>Bizi Takip Edin</h3>
-              <div className={styles.takip}>
-                <span>
-                  <a href={'https://twitter.com/' + twitter}>
-                    <FaTwitterSquare size="2em" />
-                  </a>
-                </span>
-                <span>
-                  <a href={'https://fb.com/' + facebook}>
-                    <FaFacebookSquare size="2em" />
-                  </a>
-                </span>
-                <span>
-                  <a href={'https://instagram.com/' + instagram}>
-                    <ImInstagram size="2em" />
-                  </a>
-                </span>
-                <span>
-                  <a href={'https://youtube.com/' + youtube}>
-                    <SiYoutubetv size="2em" />
-                  </a>
-                </span>
-              </div>
+          </div>
+          <div className={styles.altfooter}>
+            <div className={styles.altfootertext} dangerouslySetInnerHTML={{ __html: alt_footer }}></div>
+            <div className={styles.takip}>
+              <span>
+                <a href={'https://twitter.com/' + twitter}>
+                  <FaTwitterSquare size="2em" />
+                </a>
+              </span>
+              <span>
+                <a href={'https://fb.com/' + facebook}>
+                  <FaFacebookSquare size="2em" />
+                </a>
+              </span>
+              <span>
+                <a href={'https://instagram.com/' + instagram}>
+                  <ImInstagram size="2em" />
+                </a>
+              </span>
+              <span>
+                <a href={'https://youtube.com/' + youtube}>
+                  <SiYoutubetv size="2em" />
+                </a>
+              </span>
             </div>
           </div>
-          <div className={styles.altfooter} dangerouslySetInnerHTML={{ __html: alt_footer }}></div>
         </footer>
       </>
     );

@@ -28,14 +28,6 @@ export default function Navbar({ fixed }) {
       ],
     },
     {
-      name: 'Kurslarımız',
-      url: '/kurslarimiz',
-    },
-    {
-      name: 'Duyurular',
-      url: '/duyurular',
-    },
-    {
       name: 'Şubelerimiz',
       url: '/subelerimiz',
       dropdown: [
@@ -52,6 +44,18 @@ export default function Navbar({ fixed }) {
           url: '/subelerimiz/bulgurlu',
         },
       ],
+    },
+    {
+      name: 'Farkımız',
+      url: '/farkimiz-ve-programimiz',
+    },
+    {
+      name: 'Kurslarımız',
+      url: '/kurslarimiz',
+    },
+    {
+      name: 'Duyurular',
+      url: '/duyurular',
     },
     {
       name: 'İletişim',

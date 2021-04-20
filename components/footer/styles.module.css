@@ -3,7 +3,7 @@
     @apply pt-20 pb-12 text-white
 }
 .ftcontainer{
-    @apply w-11/12 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-sm
+    @apply w-11/12 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-sm gap-6
 }
 .ftcontainer h3{
     @apply font-semibold text-xl
@@ -23,9 +23,15 @@
 .linkler li{
   @apply mt-2
 }
+.takip{
+    @apply flex gap-4 mt-6 md:mt-0
+}
 .takip span a svg {
     @apply hover:scale-50 hover:bg-yellow-600 hover:translate-x-1/2 fill-current
 }
 .altfooter{
-    @apply mt-20 border-t pt-6 border-gray-500
+    @apply mt-20 border-t pt-6 border-gray-500 flex flex-row justify-center lg:justify-between w-11/12 m-auto flex-wrap
+}
+.altfootertext{
+    @apply text-sm
 }

@@ -25,6 +25,24 @@ collections:
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Farkımız ve Programımız'
+        name: 'farkimiz'
+        file: 'content/farkimiz.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Sıkça Sorulan Sorula'
+        name: 'sss'
+        file: 'content/sss.md'
+        fields:
+          - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'text' }
+          - label: "Sorular"
+            name: "sorular"
+            widget: list
+            fields:
+              - { label: "Soru Başlığı", name: "soru", widget: "string" }
+              - { label: "Cevabı", name: "text", widget: "text"}
 
   - name: 'module'
     label: 'Moduller'
@@ -93,13 +111,19 @@ collections:
         name: 'footer'
         file: 'content/footer.md'
         fields:
+          - { label: 'Şube 1 Başlık', name: 'sube1_title', widget: 'string' }
           - { label: 'Şube 1 Harita', name: 'sube1_map', widget: 'string' }
-          - { label: 'Şube 1 Tel', name: 'sube1_tel', widget: 'string' }
-          - { label: 'Hizmet 2', name: 'sube1_mail', widget: 'string' }
-          - { label: 'Açıklama 2', name: 'sube2_map', widget: 'string' }
-          - { label: 'Hizmet 3', name: 'sube2_tel', widget: 'string' }
-          - { label: 'Açıklama 3', name: 'sube2_mail', widget: 'string' }
-          - { label: 'Hizmet 4', name: 'alt_footer', widget: 'text' }
+          - { label: 'Şube 1 Telefon', name: 'sube1_tel', widget: 'string' }
+          - { label: 'Şube 1 E-posta', name: 'sube1_mail', widget: 'string' }
+          - { label: 'Şube 2 Başlık', name: 'sube2_title', widget: 'string' }
+          - { label: 'Şube 2 Harita', name: 'sube2_map', widget: 'string' }
+          - { label: 'Şube 2 E-posta', name: 'sube2_mail', widget: 'string' }
+          - { label: 'Şube 2 Telefon', name: 'sube2_tel', widget: 'string' }
+          - { label: 'Şube 3 Title', name: 'sube3_title', widget: 'string' }
+          - { label: 'Şube 3 Harita', name: 'sube3_map', widget: 'string' }
+          - { label: 'Şube 3 E-posta', name: 'sube3_mail', widget: 'string' }
+          - { label: 'Şube 3 Telefon', name: 'sube3_tel', widget: 'string' }
+          - { label: 'Alt Footer Açıklama', name: 'alt_footer', widget: 'text' }
           - { label: 'Hizmet 2', name: 'youtube', widget: 'string' }
           - { label: 'Açıklama 2', name: 'twitter', widget: 'string' }
           - { label: 'Hizmet 3', name: 'facebook', widget: 'string' }
