@@ -30,6 +30,7 @@ collections:
         file: 'content/farkimiz.md'
         fields:
           - { label: 'Başlık', name: 'title', widget: 'string' }
+          - { label: 'Açıklama', name: 'description', widget: 'text' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Sıkça Sorulan Sorula'
         name: 'sss'

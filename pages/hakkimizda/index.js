@@ -4,20 +4,27 @@ import { Component } from 'react';
 import { attributes, react as HakkimizdaCompnent } from '../../content/hakkimizda.md';
 import HeroWrap from '../../components/herowrap';
 import Etkinlik from '../../components/etkinlik';
+import Seo from '../../components/seo';
 
 class hakkimizda extends Component {
   render() {
     let { title } = attributes;
     return (
-      <Layout>
-        <HeroWrap title={title} />
-        <section className={styles.section}>
-          <Etkinlik />
-          <article className="prose-lg w-full mt-20">
-            <HakkimizdaCompnent />
-          </article>
-        </section>
-      </Layout>
+      <>
+        <Seo
+          title={title}
+          description="Vıp Dahi Kalemler  Eğitim Kurumlarında; Atatürk gibi düşünmeye önem verilmektedir."
+        />
+        <Layout>
+          <HeroWrap title={title} />
+          <section className={styles.section}>
+            <Etkinlik />
+            <article className="prose-lg w-full mt-20">
+              <HakkimizdaCompnent />
+            </article>
+          </section>
+        </Layout>
+      </>
     );
   }
 }

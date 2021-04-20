@@ -4,34 +4,38 @@ import { attributes, react as CekmekoyOrtaokulCompnent } from '../../content/cek
 import HeroWrap from '../../components/herowrap';
 import styles from './styles.module.css';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+import Seo from '../../components/seo';
 
 class cekmekoyortaokul extends Component {
   render() {
     let { title, description, galeri } = attributes;
     return (
-      <Layout>
-        <HeroWrap title={title} />
-        <section className="w-11/12 m-auto text-justify pb-24">
-          <article className="prose-lg w-full mt-20">
-            <h2>{title}</h2>
-            <p>{description}</p>
-          </article>
-          <SimpleReactLightbox>
-            <SRLWrapper>
-              <div className={styles.kapsayici}>
-                <h3>Kursumuzdan Görüntüler</h3>
-                <div className={styles.gallery}>
-                  {galeri.map((gal, k) => (
-                    <a key={k} href={gal.image}>
-                      <img width="280" height="350" src={gal.image} alt={gal.title} />
-                    </a>
-                  ))}
+      <>
+        <Seo title={title} description={description} />
+        <Layout>
+          <HeroWrap title={title} />
+          <section className="w-11/12 m-auto text-justify pb-24">
+            <article className="prose-lg w-full mt-20">
+              <h2>{title}</h2>
+              <p>{description}</p>
+            </article>
+            <SimpleReactLightbox>
+              <SRLWrapper>
+                <div className={styles.kapsayici}>
+                  <h3>Kursumuzdan Görüntüler</h3>
+                  <div className={styles.gallery}>
+                    {galeri.map((gal, k) => (
+                      <a key={k} href={gal.image}>
+                        <img width="280" height="350" src={gal.image} alt={gal.title} />
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </SRLWrapper>
-          </SimpleReactLightbox>
-        </section>
-      </Layout>
+              </SRLWrapper>
+            </SimpleReactLightbox>
+          </section>
+        </Layout>
+      </>
     );
   }
 }

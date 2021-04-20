@@ -5,29 +5,33 @@ import matter from 'gray-matter';
 import Layout from '../../components/layout';
 import styles from './styles.module.css';
 import HeroWrap from '../../components/herowrap';
+import Seo from '../../components/seo';
 
 const Kurslarimiz = ({ file }) => (
-  <Layout>
-    <HeroWrap title="Kurslarımız" />
-    <section className={styles.section}>
-      {file.map(f => {
-        return (
-          <div className={styles.card} key={f.props.htmlString.slug}>
-            <div className={styles.img} style={{ background: `url(${f.props.htmlString.image})` }}></div>
-            <h3>
+  <>
+    <Seo title="Kurslarımız" description="Bünyemizde eğitimini verdiğimiz kurslarımız." />
+    <Layout>
+      <HeroWrap title="Kurslarımız" />
+      <section className={styles.section}>
+        {file.map(f => {
+          return (
+            <div className={styles.card} key={f.props.htmlString.slug}>
+              <div className={styles.img} style={{ background: `url(${f.props.htmlString.image})` }}></div>
+              <h3>
+                <Link href={'/kurs/' + f.props.htmlString.slug}>
+                  <a>{f.props.htmlString.title}</a>
+                </Link>
+              </h3>
+              <p>{f.props.htmlString.description}</p>
               <Link href={'/kurs/' + f.props.htmlString.slug}>
-                <a>{f.props.htmlString.title}</a>
+                <a className={styles.button}>Devamını Oku</a>
               </Link>
-            </h3>
-            <p>{f.props.htmlString.description}</p>
-            <Link href={'/kurs/' + f.props.htmlString.slug}>
-              <a className={styles.button}>Devamını Oku</a>
-            </Link>
-          </div>
-        );
-      })}
-    </section>
-  </Layout>
+            </div>
+          );
+        })}
+      </section>
+    </Layout>
+  </>
 );
 
 export const getStaticProps = async () => {

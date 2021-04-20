@@ -6,16 +6,20 @@ import marked from 'marked';
 import styles from './styles.module.css';
 import Layout from '../../components/layout';
 import Hero from '../../components/herowrap';
+import Seo from '../../components/seo';
 
 const Dersler = ({ contents, data }) => {
   return (
-    <Layout>
-      <Hero title={data.title} />
-      <article className={styles.article}>
-        <img src={data.image} width="100%" />
-        <div dangerouslySetInnerHTML={{ __html: contents }} />
-      </article>
-    </Layout>
+    <>
+      <Seo title={data.title} description={data.description} />
+      <Layout>
+        <Hero title={data.title} />
+        <article className={styles.article}>
+          <img src={data.image} width="100%" />
+          <div dangerouslySetInnerHTML={{ __html: contents }} />
+        </article>
+      </Layout>
+    </>
   );
 };
 

@@ -14,9 +14,6 @@ const myLoader = ({ src }) => {
 const layout = ({ children }) => {
   return (
     <>
-      <Head>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-      </Head>
       <header className={styles.header}>
         <div className={styles.navbartop}>
           <div className="col-span-1 lg:col-span-2 py-4 lg:py-6">

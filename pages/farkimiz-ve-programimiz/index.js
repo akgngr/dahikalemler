@@ -2,19 +2,23 @@ import Layout from '../../components/layout';
 import { Component } from 'react';
 import { attributes, react as FarkimizCompnent } from '../../content/farkimiz.md';
 import HeroWrap from '../../components/herowrap';
+import Seo from '../../components/seo';
 
 class farkimiz extends Component {
   render() {
-    let { title } = attributes;
+    let { title, description } = attributes;
     return (
-      <Layout>
-        <HeroWrap title={title} />
-        <section className="w-11/12 m-auto text-justify">
-          <article className="prose-lg w-full mt-20">
-            <FarkimizCompnent />
-          </article>
-        </section>
-      </Layout>
+      <>
+        <Seo title={title} description={description} />
+        <Layout>
+          <HeroWrap title={title} />
+          <section className="w-11/12 m-auto text-justify">
+            <article className="prose-lg w-full mt-20">
+              <FarkimizCompnent />
+            </article>
+          </section>
+        </Layout>
+      </>
     );
   }
 }

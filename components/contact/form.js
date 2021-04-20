@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik } from 'formik';
+import { Field, Form, Formik } from 'formik';
 import styles from './styles.module.css';
 
 const ContactForm = () => {
@@ -25,7 +25,7 @@ const ContactForm = () => {
           }
           return errors;
         }}
-        onSubmit={(values, actions) => {
+        onSubmit={(values, actions, { setSubmitting }) => {
           setTimeout(() => {
             fetch('/', {
               method: 'POST',
@@ -43,69 +43,40 @@ const ContactForm = () => {
           }, 400);
         }}
       >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-          /* and other goodies */
-        }) => (
-          <form onSubmit={handleSubmit} className={styles.form} netlify-honeypot="bot-field" data-netlify={true}>
-            <div>
-              <input
-                type="text"
-                name="name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.name}
-                placeholder="Ad, Soyad"
-              />
-              {errors.name && touched.name && <span className="p-2 text-white bg-yellow-600"> {errors.name} </span>}
-              <input
-                type="text"
-                name="sinif"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.sinif}
-                placeholder="Öğrencinin Sınıfı"
-              />
-              {errors.sinif && touched.sinif && <span className="p-2 text-white bg-yellow-600"> {errors.sinif} </span>}
-              <textarea
-                name="mesaj"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.mesaj}
-                placeholder="Mesajınız"
-              ></textarea>
-              {errors.mesaj && touched.mesaj && <span className="p-2 text-white bg-yellow-600"> {errors.mesaj} </span>}
+        {({ errors, touched, isSubmitting }) => (
+          <Form name="contact" className={styles.form} netlify-honeypot="bot-field" data-netlify={true}>
+            <Field type="hidden" name="bot-field" />
+            <Field type="hidden" name="contact" />
+            <div className={styles.formControl}>
+              <Field name="name" placeholder="Ad, Soyad" />
+              {errors.name && touched.name && (
+                <span className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.name} </span>
+              )}
             </div>
-            <div>
-              <input
-                type="email"
-                name="email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.email}
-                placeholder="Eposta Adresiniz"
-              />
-              {errors.email && touched.email && <span className="p-2 text-white bg-yellow-600"> {errors.email} </span>}
-              <input
-                type="tel"
-                name="phone"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.phone}
-                placeholder="Telefon Numaranız"
-              />
-              {errors.phone && touched.phone && <div className="p-2 text-white bg-yellow-600"> {errors.phone} </div>}
+            <div className={styles.formControl}>
+              <Field name="email" placeholder="Eposta adresiniz" />
+              {errors.email && touched.email && (
+                <span className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.email} </span>
+              )}
+            </div>
+            <div className={styles.formControl}>
+              <Field name="phone" placeholder="Telefon numarnız" />
+              {errors.phone && touched.phone && (
+                <div className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.phone} </div>
+              )}
+            </div>
+            <div className={styles.formControl}>
+              <Field name="mesaj" placeholder="Mesajınız" component="textarea" />
+              {errors.mesaj && touched.mesaj && (
+                <span className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.mesaj} </span>
+              )}
+            </div>
+            <div className="pt-4">
               <button type="submit" disabled={isSubmitting}>
                 Gönder
               </button>
             </div>
-          </form>
+          </Form>
         )}
       </Formik>
     </div>

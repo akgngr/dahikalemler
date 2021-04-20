@@ -1,14 +1,12 @@
 ---
 baslik: Slider Resimleri
 slider:
-  - description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a
-      Scottish Fold from Japan, and he loves boxes.
-    title: Maru is a Scottish Fold from Japan, and he loves boxes.
+  - description: Ananında uzman eğitim kadromuzla eğitimlerimiz son hız devam ediyor.
+    title: Ananında Uzman Eğitim Kadromuz
     image: image/bg_1.jpg
-    url: /hakkimizda
-  - description: Maru is a Scottish Fold from Japan, and he loves boxes. Maru is a
-      Scottish Fold from Japan, and he loves boxes.
-    title: Maru is a Scottish Fold from Japan, and he loves boxes.
+    url: /iletisim
+  - description: En iyi şekilde Covid-19 önlemlerimizi aldık ve derslerimizi sağlıklı bir ortamda işliyoruz.
+    title: Covid-19 Önlemlerine Dikkat Ediyoruz
     image: image/bg_2.jpg
-    url: /hakkimizda
+    url: /iletisim
 ---

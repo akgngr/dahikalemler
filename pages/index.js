@@ -13,9 +13,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Contact from '../components/contact';
 SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
 import Ogrenciyorumlari from '../components/ogrenciyorumlari';
+import Seo from '../components/seo';
 
 const Home = ({ file }) => (
   <Layout>
+    <Seo
+      title="Vip Dahi Kalemler İstanbul"
+      description="19 yılı aşmış tecrübemizle ve deneyimli eğitim kadromuzla öğrencilerimizin hedeflerine ulaşmaları konusunda rehber olmaktan gurur duyuyoruz."
+    />
     <Slider />
     <Hizmetler />
     <Etkinlik />
