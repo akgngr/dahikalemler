@@ -3,6 +3,11 @@ import { Formik } from 'formik';
 import styles from './styles.module.css';
 
 const ContactForm = () => {
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
   return (
     <div>
       <Formik

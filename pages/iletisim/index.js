@@ -9,6 +9,11 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 class iletisim extends Component {
   render() {
+    const encode = data => {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&');
+    };
     let {
       sube1_title,
       sube1_map,
