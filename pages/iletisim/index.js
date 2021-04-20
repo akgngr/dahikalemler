@@ -53,12 +53,12 @@ class iletisim extends Component {
                 }
                 return errors;
               }}
-              onSubmit={(values, { setSubmitting }) => {
+              onSubmit={(values, actions) => {
                 setTimeout(() => {
                   fetch('/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: encode({ 'form-name': 'contact-demo', ...values }),
+                    body: encode({ 'form-name': 'contact', ...values }),
                   })
                     .then(() => {
                       alert('Success');
@@ -81,7 +81,7 @@ class iletisim extends Component {
                 isSubmitting,
                 /* and other goodies */
               }) => (
-                <form onSubmit={handleSubmit} className={styles.form} data-netlify={true}>
+                <form onSubmit={handleSubmit} className={styles.form} netlify-honeypot="bot-field" data-netlify={true}>
                   <div className={styles.formControl}>
                     <input
                       type="text"
