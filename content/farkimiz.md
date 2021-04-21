@@ -2,7 +2,6 @@
 title: "Farkımız ve Programımız"
 description: "Burası açıklama"
 ---
-
 ## NEDEN VİP DAHİ KALEMLERİ?
 - Profesyonel kadro
 - Eğitim koçluğu
