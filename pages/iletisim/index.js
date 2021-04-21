@@ -40,23 +40,24 @@ class iletisim extends Component {
                 </p>
               </header>
               <div className={styles.contactform}>
-                <form method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+                <form method="POST" name="contact" action="/seccess" netlify-honeypot="bot-field" data-netlify="true">
                   <p className="hidden">
                     <label>
                       Don’t fill this out if you’re human: <input name="bot-field" />
                     </label>
                   </p>
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className={styles.formControl}>
-                    <input name="name" placeholder="Adınız Soyadınız" required={true} />
+                    <input type="text" name="name" id="name" placeholder="Adınız Soyadınız" required={true} />
                   </div>
                   <div className={styles.formControl}>
-                    <input name="email" placeholder="E-posta adresiniz" required={true} />
+                    <input type="email" name="email" id="email" placeholder="E-posta adresiniz" required={true} />
                   </div>
                   <div className={styles.formControl}>
-                    <input name="telefon" placeholder="Telefon numaranız" required={true} />
+                    <input type="tel" name="telefon" id="telefon" placeholder="Telefon numaranız" required={true} />
                   </div>
                   <div className={styles.formControl}>
-                    <textarea name="name" placeholder="Mesajınız" required={true}></textarea>
+                    <textarea name="mesaj" id="mesaj" placeholder="Mesajınız" required={true}></textarea>
                   </div>
                   <div className="mt-4">
                     <button type="submit">Gönder</button>

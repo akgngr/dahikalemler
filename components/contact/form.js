@@ -8,12 +8,20 @@ const ContactForm = () => {
       .join('&');
   };
   return (
-    <form className={styles.form} method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+    <form
+      className={styles.form}
+      method="POST"
+      action="/success"
+      name="contact"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+    >
       <p className="hidden">
         <label>
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
+      <input type="hidden" name="form-name" value="contact" />
       <div>
         <input name="name" placeholder="Adınız Soyadınız" required={true} />
       </div>
