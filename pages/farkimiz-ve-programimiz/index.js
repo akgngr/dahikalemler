@@ -14,7 +14,7 @@ class farkimiz extends Component {
           <HeroWrap title={title} />
           <section className="w-8/12 m-auto text-justify">
             <article className="prose prose-lg prose-yellow w-full mt-20">
-              <div dangerouslySetInnerHTML={{ __html: FarkimizCompnent }}> </div>
+              <div dangerouslySetInnerHTML={{ __html: FarkimizCompnent }} />
             </article>
           </section>
         </Layout>
