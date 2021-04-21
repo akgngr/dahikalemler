@@ -21,8 +21,8 @@ class yorumlar extends Component {
           effect={'fade'}
           loop={true}
         >
-          {comment.map(yorum => (
-            <SwiperSlide key={yorum.image}>
+          {comment.map((yorum, k) => (
+            <SwiperSlide key={k}>
               <div className={styles.card}>
                 <div className={styles.cardimg}>
                   <img src={yorum.image} />{' '}

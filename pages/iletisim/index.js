@@ -13,14 +13,17 @@ class iletisim extends Component {
       sube1_title,
       sube1_map,
       sube1_tel,
+      sube1_sabit,
       sube1_mail,
       sube2_title,
       sube2_map,
       sube2_tel,
+      sube2_sabit,
       sube2_mail,
       sube3_title,
       sube3_map,
       sube3_tel,
+      sube3_sabit,
       sube3_mail,
     } = attributes;
     return (
@@ -95,6 +98,14 @@ class iletisim extends Component {
                   </div>
                   <div>
                     <span>
+                      <FaPhone />
+                    </span>
+                    <span>
+                      <a href={'tel:' + sube1_sabit}>{sube1_sabit}</a>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
                       <FaEnvelope />
                     </span>
                     <span>
@@ -132,6 +143,14 @@ class iletisim extends Component {
                   </div>
                   <div>
                     <span>
+                      <FaPhone />
+                    </span>
+                    <span>
+                      <a href={'tel:' + sube2_sabit}>{sube2_sabit}</a>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
                       <FaEnvelope />
                     </span>
                     <span>
@@ -165,6 +184,14 @@ class iletisim extends Component {
                     </span>
                     <span>
                       <a href={'tel:' + sube3_tel}>{sube3_tel}</a>{' '}
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <FaPhone />
+                    </span>
+                    <span>
+                      <a href={'tel:' + sube3_sabit}>{sube3_sabit}</a>
                     </span>
                   </div>
                   <div>

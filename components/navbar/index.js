@@ -67,7 +67,7 @@ export default function Navbar({ fixed }) {
     return m.dropdown ? (
       <Dropdown key={index} name={m.name} data={m.dropdown} />
     ) : (
-      <li className="nav-item inline-flex justify-center w-full px-4 py-2 text-sm font-medium" key={index}>
+      <li className="nav-item inline-flex w-full px-4 py-2 text-sm font-medium" key={index}>
         <Link href={m.url}>
           <a className="capitalize text-white hover:opacity-75">{m.name}</a>
         </Link>
@@ -89,7 +89,7 @@ export default function Navbar({ fixed }) {
             </button>
           </div>
           <div
-            className={'lg:flex flex-grow items-center' + (navbarOpen ? ' flex' : ' hidden')}
+            className={'lg:flex w-full items-center' + (navbarOpen ? ' flex' : ' hidden')}
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none">{listMenu}</ul>

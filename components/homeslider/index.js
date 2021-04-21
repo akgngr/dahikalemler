@@ -35,7 +35,7 @@ export default class Slider extends Component {
                       <p className={styles.textp}>{slides.description}</p>
                       <p className={styles.textp}>
                         <a href={slides.url} className={styles.textbutton + ' button-default'}>
-                          Contact Us
+                          İletişime Geç
                         </a>
                       </p>
                     </div>

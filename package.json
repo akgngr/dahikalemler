@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@headlessui/react": "^1.0.0",
@@ -30,6 +31,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "frontmatter-markdown-loader": "^3.6.2",
+    "next-sitemap": "^1.6.25",
     "postcss": "^8.2.9",
     "prettier": "^2.2.1",
     "tailwindcss": "^2.0.4"

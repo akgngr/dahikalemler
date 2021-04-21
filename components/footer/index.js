@@ -12,14 +12,17 @@ class Footer extends Component {
       sube1_title,
       sube1_map,
       sube1_tel,
+      sube1_sabit,
       sube1_mail,
       sube2_title,
       sube2_map,
       sube2_tel,
+      sube2_sabit,
       sube2_mail,
       sube3_title,
       sube3_map,
       sube3_tel,
+      sube3_sabit,
       sube3_mail,
       alt_footer,
       twitter,
@@ -32,7 +35,7 @@ class Footer extends Component {
       <>
         <footer className={styles.footer}>
           <div className={styles.ftcontainer}>
-            <div>
+            <div className={styles.ftcard}>
               <h3>{sube1_title}</h3>
               <div>
                 <span>
@@ -50,6 +53,14 @@ class Footer extends Component {
               </div>
               <div>
                 <span>
+                  <FaPhone />
+                </span>
+                <span>
+                  <a href={'tel:' + sube1_sabit}>{sube1_sabit}</a>
+                </span>
+              </div>
+              <div>
+                <span>
                   <FaEnvelope />
                 </span>
                 <span>
@@ -57,7 +68,7 @@ class Footer extends Component {
                 </span>
               </div>
             </div>
-            <div>
+            <div className={styles.ftcard}>
               <h3>{sube2_title}</h3>
               <div>
                 <span>
@@ -75,6 +86,14 @@ class Footer extends Component {
               </div>
               <div>
                 <span>
+                  <FaPhone />
+                </span>
+                <span>
+                  <a href={'tel:' + sube2_sabit}>{sube2_sabit}</a>{' '}
+                </span>
+              </div>
+              <div>
+                <span>
                   <FaEnvelope />
                 </span>
                 <span>
@@ -82,7 +101,7 @@ class Footer extends Component {
                 </span>
               </div>
             </div>
-            <div>
+            <div className={styles.ftcard}>
               <h3>{sube3_title}</h3>
               <div>
                 <span>
@@ -100,6 +119,14 @@ class Footer extends Component {
               </div>
               <div>
                 <span>
+                  <FaPhone />
+                </span>
+                <span>
+                  <a href={'tel:' + sube3_sabit}>{sube3_sabit}</a>{' '}
+                </span>
+              </div>
+              <div>
+                <span>
                   <FaEnvelope />
                 </span>
                 <span>
@@ -107,7 +134,7 @@ class Footer extends Component {
                 </span>
               </div>
             </div>
-            <div>
+            <div className={styles.ftcard}>
               <h3>Hızlı Erişim</h3>
               <ul className={styles.linkler}>
                 {linkler.map(l => (

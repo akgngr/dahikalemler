@@ -5,12 +5,12 @@ import Link from 'next/link';
 const Dropdown = props => {
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center">
         <div className="relative inline-block text-left">
           <Menu>
             {({ open }) => (
               <>
-                <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 transition duration-150 ease-in-out text-white hover:text-gray-300 focus:outline-none active:bg-gray-50 active:text-white-200">
+                <Menu.Button className="inline-flex w-full px-4 py-2 text-sm font-medium leading-5 transition duration-150 ease-in-out text-white hover:text-gray-300 focus:outline-none active:bg-gray-50 active:text-white-200">
                   <span>{props.name}</span>
                   <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
                     <path

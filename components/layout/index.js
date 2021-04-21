@@ -25,7 +25,7 @@ const layout = ({ children }) => {
           </div>
 
           <IconContext.Provider value={{ className: 'site-icon' }}>
-            <div className="flex flex-row justify-start items-start space-x-4 py-4 lg:py-6">
+            <div className="flex-row justify-start items-start space-x-4 py-4 lg:py-6  hidden md:flex lg:flex">
               <div className={styles.ortala}>
                 <IoIosSend />
               </div>
@@ -33,8 +33,8 @@ const layout = ({ children }) => {
               <div className="flex flex-col">
                 <h3 className="font-bold">Eposta</h3>
                 <span>
-                  <a className="text-sm" href="mailto:vipdahikalemler@gmail.com">
-                    vipdahikalemler@gmail.com
+                  <a className="text-sm" href="mailto:info@dahikalemler.com">
+                    info@dahikalemler.com
                   </a>{' '}
                 </span>
               </div>

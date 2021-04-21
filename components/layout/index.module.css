@@ -2,7 +2,7 @@
   @apply w-full lg:w-11/12 mx-auto;
 }
 .navbartop {
-  @apply grid grid-cols-1  lg:grid-cols-5
+  @apply grid grid-cols-2  lg:grid-cols-5
    mr-auto space-x-4;
 }
 .button {
