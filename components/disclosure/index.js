@@ -10,7 +10,9 @@ export default function Tabs(props) {
             <span>{props.soru}</span>
             <FaChevronCircleUp className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-yellow-900`} />
           </Disclosure.Button>
-          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">{props.text}</Disclosure.Panel>
+          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500 prose-lg w-full">
+            <p>{props.text}</p>
+          </Disclosure.Panel>
         </>
       )}
     </Disclosure>

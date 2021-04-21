@@ -40,7 +40,7 @@ class iletisim extends Component {
                 </p>
               </header>
               <div className={styles.contactform}>
-                <form method="POST" name="contact" action="/seccess" netlify-honeypot="bot-field" data-netlify="true">
+                <form method="POST" name="contact" action="/success" netlify-honeypot="bot-field" data-netlify="true">
                   <p className="hidden">
                     <label>
                       Don’t fill this out if you’re human: <input name="bot-field" />

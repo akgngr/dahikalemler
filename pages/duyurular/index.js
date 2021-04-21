@@ -15,8 +15,8 @@ class duyurular extends Component {
         <Seo title={title} description={description} />
         <Layout>
           <HeroWrap title={title} />
-          <section className="w-11/12 m-auto text-justify">
-            <article className="prose-lg w-full mt-20">
+          <section className="w-9/12 m-auto text-justify">
+            <article className="prose prose-lg w-full mt-20">
               <h2>{title}</h2>
               <p>{description}</p>
             </article>

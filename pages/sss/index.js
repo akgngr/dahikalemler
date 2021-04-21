@@ -13,7 +13,7 @@ class Sss extends Component {
         <Seo title={title} description={description} />
         <Layout>
           <HeroWrap title={title} />
-          <section className="w-8/12 m-auto pt-12 pb-8">
+          <section className="w-9/12 m-auto pt-12 pb-8">
             <h2 className="font-semibold text-lg text-yellow-700 pb-4">{title}</h2>
             <p>{description}</p>
 

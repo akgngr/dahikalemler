@@ -12,9 +12,9 @@ class farkimiz extends Component {
         <Seo title={title} description={description} />
         <Layout>
           <HeroWrap title={title} />
-          <section className="w-11/12 m-auto text-justify">
-            <article className="prose-lg w-full mt-20">
-              <FarkimizCompnent />
+          <section className="w-8/12 m-auto text-justify">
+            <article className="prose prose-lg prose-yellow w-full mt-20">
+              <div dangerouslySetInnerHTML={{ __html: FarkimizCompnent }}> </div>
             </article>
           </section>
         </Layout>
