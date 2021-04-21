@@ -4,17 +4,11 @@ import HeroWrap from '../../components/herowrap';
 import { attributes, react as FooterContent } from '../../content/footer.md';
 import { Component } from 'react';
 import Iframe from 'react-iframe';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import Seo from '../../components/seo';
 
 class iletisim extends Component {
   render() {
-    const encode = data => {
-      return Object.keys(data)
-        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&');
-    };
     let {
       sube1_title,
       sube1_map,
@@ -39,97 +33,36 @@ class iletisim extends Component {
           <HeroWrap title="İletişim" />
           <section className={styles.section}>
             <article className={styles.form}>
-              <header>
+              <header className="mb-6">
                 <h2 className="font-semibold text-yellow-700 text-2xl pb-2">İletişim Formu</h2>
                 <p className="font-light">
                   Bizimle iletişime geçin.. İsterseniz iletişim bilgilerinizi girin biz sizinle iletişime geçelim..
                 </p>
               </header>
-
-              <Formik
-                initialValues={{
-                  name: '',
-                  email: '',
-                  phone: '',
-                  sinif: '',
-                  mesaj: '',
-                  'form-name': 'contact',
-                  'bot-field': '',
-                }}
-                validate={values => {
-                  const errors = {};
-
-                  if (!values.email || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-                    errors.email = 'Hatalı eposta adresi girdiniz yada bu alanı boş bıraktınız.';
-                  }
-                  if (!values.name) {
-                    errors.name = 'Gerekli';
-                  }
-                  if (!values.phone) {
-                    errors.phone = 'Gerekli';
-                  }
-                  if (!values.sinif) {
-                    errors.simif = 'Gerekli';
-                  }
-                  if (!values.mesaj) {
-                    errors.mesaj = 'Gerekli';
-                  }
-                  return errors;
-                }}
-                onSubmit={(values, actions, { setSubmitting }) => {
-                  setTimeout(() => {
-                    fetch('/', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                      body: encode({ 'form-name': 'contact', ...values }),
-                    })
-                      .then(() => {
-                        alert('Success');
-                        actions.resetForm();
-                      })
-                      .catch(() => {
-                        alert('Error');
-                      })
-                      .finally(() => actions.setSubmitting(false));
-                  }, 400);
-                }}
-              >
-                {({ errors, touched, isSubmitting }) => (
-                  <Form name="contact" className={styles.form} netlify-honeypot="bot-field" data-netlify={true}>
-                    <Field type="hidden" name="bot-field" />
-                    <Field type="hidden" name="contact" />
-                    <div className={styles.formControl}>
-                      <Field name="name" placeholder="Ad, Soyad" />
-                      {errors.name && touched.name && (
-                        <span className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.name} </span>
-                      )}
-                    </div>
-                    <div className={styles.formControl}>
-                      <Field name="email" placeholder="Eposta adresiniz" />
-                      {errors.email && touched.email && (
-                        <span className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.email} </span>
-                      )}
-                    </div>
-                    <div className={styles.formControl}>
-                      <Field name="phone" placeholder="Telefon numarnız" />
-                      {errors.phone && touched.phone && (
-                        <div className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.phone} </div>
-                      )}
-                    </div>
-                    <div className={styles.formControl}>
-                      <Field name="mesaj" placeholder="Mesajınız" component="textarea" />
-                      {errors.mesaj && touched.mesaj && (
-                        <span className="p-2 text-white text-sm mt-2 block bg-yellow-600"> {errors.mesaj} </span>
-                      )}
-                    </div>
-                    <div className="pt-4">
-                      <button type="submit" disabled={isSubmitting}>
-                        Gönder
-                      </button>
-                    </div>
-                  </Form>
-                )}
-              </Formik>
+              <div className={styles.contactform}>
+                <form method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </p>
+                  <div className={styles.formControl}>
+                    <input name="name" placeholder="Adınız Soyadınız" required={true} />
+                  </div>
+                  <div className={styles.formControl}>
+                    <input name="email" placeholder="E-posta adresiniz" required={true} />
+                  </div>
+                  <div className={styles.formControl}>
+                    <input name="telefon" placeholder="Telefon numaranız" required={true} />
+                  </div>
+                  <div className={styles.formControl}>
+                    <textarea name="name" placeholder="Mesajınız" required={true}></textarea>
+                  </div>
+                  <div className="mt-4">
+                    <button type="submit">Gönder</button>
+                  </div>
+                </form>
+              </div>
             </article>
             <div className={styles.haritalar}>
               <div className={styles.iletisimalt}>

@@ -25,7 +25,7 @@
 }
 .govde{
     z-index: 1000;
-    @apply w-11/12 m-auto grid grid-cols-2 text-white relative pt-12 pb-12
+    @apply w-11/12 m-auto grid grid-cols-1 md:grid-cols-2 text-white relative pt-12 pb-12
 }
 .govde h3{
     @apply font-semibold text-3xl pb-4
