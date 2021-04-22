@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import styles from './index.module.css';
 import { IconContext } from 'react-icons';
 import { IoIosSend } from 'react-icons/io';

@@ -5,7 +5,7 @@ import { attributes, react as FooterContent } from '../../content/footer.md';
 import { Component } from 'react';
 import Iframe from 'react-iframe';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class iletisim extends Component {
   render() {

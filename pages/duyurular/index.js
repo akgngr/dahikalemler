@@ -4,7 +4,7 @@ import { attributes, react as DuyurularCompnent } from '../../content/duyurular.
 import HeroWrap from '../../components/herowrap';
 import styles from './styles.module.css';
 import Moment from 'moment';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class duyurular extends Component {
   render() {

@@ -6,7 +6,7 @@ import marked from 'marked';
 import styles from './styles.module.css';
 import Layout from '../../components/layout';
 import Hero from '../../components/herowrap';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 const Dersler = ({ contents, data }) => {
   return (

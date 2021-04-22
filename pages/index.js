@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Contact from '../components/contact';
 SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
 import Ogrenciyorumlari from '../components/ogrenciyorumlari';
-import Seo from '../components/seo';
+import Seo from '../partials/seo';
 
 const Home = ({ file }) => (
   <Layout>

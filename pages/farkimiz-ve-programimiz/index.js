@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import { Component } from 'react';
 import { attributes, react as FarkimizCompnent } from '../../content/farkimiz.md';
 import HeroWrap from '../../components/herowrap';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class farkimiz extends Component {
   render() {

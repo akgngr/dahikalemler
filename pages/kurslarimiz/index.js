@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 import Layout from '../../components/layout';
 import styles from './styles.module.css';
 import HeroWrap from '../../components/herowrap';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 const Kurslarimiz = ({ file }) => (
   <>

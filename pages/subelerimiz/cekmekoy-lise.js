@@ -4,7 +4,7 @@ import { attributes, react as CekmekoyliseComponent } from '../../content/cekmek
 import HeroWrap from '../../components/herowrap';
 import styles from './styles.module.css';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class cekmekoylise extends Component {
   render() {

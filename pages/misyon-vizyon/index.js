@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import { Component } from 'react';
 import { attributes, react as HakkimizdaCompnent } from '../../content/ilkeler.md';
 import HeroWrap from '../../components/herowrap';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class misyon extends Component {
   render() {

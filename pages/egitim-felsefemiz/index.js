@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import { Component } from 'react';
 import { attributes, react as HakkimizdaCompnent } from '../../content/felsefe.md';
 import HeroWrap from '../../components/herowrap';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class felsefe extends Component {
   render() {

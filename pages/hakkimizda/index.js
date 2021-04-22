@@ -4,7 +4,7 @@ import { Component } from 'react';
 import { attributes, react as HakkimizdaCompnent } from '../../content/hakkimizda.md';
 import HeroWrap from '../../components/herowrap';
 import Etkinlik from '../../components/etkinlik';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class hakkimizda extends Component {
   render() {

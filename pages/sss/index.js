@@ -3,7 +3,7 @@ import { attributes, react as SssContent } from '../../content/sss.md';
 import HeroWrap from '../../components/herowrap';
 import Tabs from '../../components/disclosure';
 import Layout from '../../components/layout';
-import Seo from '../../components/seo';
+import Seo from '../../partials/seo';
 
 class Sss extends Component {
   render() {
