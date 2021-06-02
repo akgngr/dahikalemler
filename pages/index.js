@@ -14,6 +14,7 @@ import Contact from '../components/contact';
 SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
 import Ogrenciyorumlari from '../components/ogrenciyorumlari';
 import Seo from '../partials/seo';
+import Popup from '../components/popup'
 
 const Home = ({ file }) => (
   <Layout>
@@ -21,6 +22,7 @@ const Home = ({ file }) => (
       title="Vip Dahi Kalemler İstanbul"
       description="19 yılı aşmış tecrübemizle ve deneyimli eğitim kadromuzla öğrencilerimizin hedeflerine ulaşmaları konusunda rehber olmaktan gurur duyuyoruz."
     />
+    <Popup />
     <Slider />
     <Hizmetler />
     <Etkinlik />

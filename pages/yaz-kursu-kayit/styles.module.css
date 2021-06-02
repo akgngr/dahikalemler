@@ -1,0 +1,48 @@
+.section{
+    @apply w-11/12 m-auto
+}
+.haritalar{
+    @apply grid grid-cols-1 lg:grid-cols-3 pt-36 gap-8 text-center mb-20
+}
+.haritalar h3{
+    @apply text-2xl font-bold text-yellow-700 pb-4
+}
+.haritalar h4{
+    @apply text-xl font-semibold pb-2 pt-6
+}
+.iletisimalt{
+    @apply flex flex-col text-left
+}
+.iletisimalt h3{
+    @apply font-semibold text-xl pt-8
+}
+.iletisimalt div div{
+    @apply flex mt-4 space-x-4
+}
+.iletisimalt div div span{
+    @apply h-auto flex items-center justify-center
+}
+.form{
+    @apply w-10/12 m-auto mt-8 lg:p-6 relative
+}
+.form form{
+    @apply flex flex-col w-full h-auto items-start
+}
+.form form input{
+    @apply w-full h-14 border border-solid border-gray-400 pl-3 pr-3 pt-2 pb-2
+}
+.form form textarea{
+    @apply w-full h-32 border border-solid border-gray-400 pl-3 pr-3 pt-2 pb-2
+}
+.formControl{
+    @apply mb-4 w-full relative
+}
+.formControl span{
+    @apply w-full block
+}
+.form button{
+    @apply float-left absolute bottom-0 left-6  border-yellow-600 rounded bg-yellow-700 text-white mt-4 pt-2 pb-2 pl-4 pr-4
+}
+.formControl .select {
+    @apply w-full h-14 border border-solid border-gray-400 pl-3 pr-3 pt-2 pb-2
+}
