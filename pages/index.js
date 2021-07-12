@@ -11,12 +11,16 @@ import styles from '../styles/Home.module.css';
 import SwiperCore, { Navigation, Autoplay, Lazy, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Contact from '../components/contact';
-SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
 import Ogrenciyorumlari from '../components/ogrenciyorumlari';
 import Seo from '../partials/seo';
 import Popup from '../components/popup';
 
-const Home = ({ file }) => (
+const { INSTA_URL } = process.env;
+
+
+SwiperCore.use([Navigation, Autoplay, Lazy, EffectFade]);
+
+const Home = ({ file, instadata }) => (
   <Layout>
     <Seo
       title="Vip Dahi Kalemler İstanbul"
@@ -73,12 +77,54 @@ const Home = ({ file }) => (
     </section>
     <Contact />
     <Ogrenciyorumlari />
+
+    <section id="instafeed" className={styles.instafeedsection}>
+          <Swiper
+            slidesPerView={4}
+            autoplay={true}
+            lazy={true}
+            loop={true}
+            spaceBetween={10}
+            breakpoints={{
+                1024: {
+                slidesPerView: 4,
+                },
+                768: {
+                slidesPerView: 3,
+                },
+                640: {
+                slidesPerView: 2,
+                },
+                360: {
+                slidesPerView: 1,
+                },
+            }}
+            >
+            {instadata.data.map(d => {
+                    return( 
+                        <SwiperSlide key={d.id}>
+                        <div className={styles.instafeedcontainer}
+                          style={{backgroundImage:`url(${d.media_url})`}}
+                        >
+                        <a target="_blank" href={d.permalink}><span>{d.caption}</span></a>
+                        </div>
+                    </SwiperSlide>
+                    )
+                }).slice(0, 10)}
+                
+            </Swiper>
+        </section>
   </Layout>
 );
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync('_posts/dersler');
-  //console.log(files);
+  const instaresult = await fetch( INSTA_URL, {
+    method: "GET"
+  });
+
+  const instafeed = await instaresult.json();
+
 
   const filesread = files.map(file => {
     const markdownWithData = fs.readFileSync(path.join('_posts/dersler', file)).toString();
@@ -94,6 +140,7 @@ export const getStaticProps = async () => {
     props: {
       slugs: files.map(filename => filename.replace('.md', '')),
       file: filesread,
+      instadata: instafeed 
     },
   };
 };

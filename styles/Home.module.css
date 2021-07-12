@@ -1,23 +1,39 @@
-.section{
-    @apply pt-28 w-11/12 m-auto pb-10
+.section {
+  @apply pt-28 w-11/12 m-auto pb-10;
 }
-.title{
-    @apply text-center pb-16 w-7/12 m-auto
+.title {
+  @apply text-center pb-16 w-7/12 m-auto;
 }
-.title h2{
-    @apply font-semibold text-4xl pb-6
+.title h2 {
+  @apply font-semibold text-4xl pb-6;
 }
-.items{
-    height: 550px;
-    @apply pl-4 pr-4 relative
+.items {
+  height: 550px;
+  @apply pl-4 pr-4 relative;
 }
-.items h3{
-    @apply font-semibold text-2xl pt-6 pb-2 text-black
+.items h3 {
+  @apply font-semibold text-2xl pt-6 pb-2 text-black;
 }
-.img{
-    @apply w-full h-72 bg-no-repeat bg-cover
+.img {
+  @apply w-full h-72 bg-no-repeat bg-cover;
 }
-.button{
+.button {
+  @apply rounded-b p-3 bg-yellow-600 text-white  absolute bottom-0 text-sm;
+}
 
-    @apply rounded-b p-3 bg-yellow-600 text-white  absolute bottom-0 text-sm
+/*
+* instagram feed styles  
+**/
+.instafeedsection {
+  @apply w-full m-auto;
+}
+.instafeedcontainer {
+  height: 350px;
+  @apply text-white bg-no-repeat bg-cover bg-top bg-center;
+}
+.instafeedcontainer a {
+  @apply hidden;
+}
+.instafeedcontainer:hover a {
+  @apply flex justify-center items-center h-full text-center pl-1 pr-1;
 }
