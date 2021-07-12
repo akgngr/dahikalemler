@@ -56,7 +56,7 @@ const layout = ({ children }) => {
           </IconContext.Provider>
 
           <div className="lg:flex lg:justify-end items-center hidden py-4 lg:py-6">
-            <Link href="/iletisim">
+            <Link href="/yaz-kursu-kayit">
               <a className={styles.button}>Biz Sizi Arayalım</a>
             </Link>
           </div>
