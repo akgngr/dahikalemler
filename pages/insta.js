@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 const { INSTA_API } = process.env;
 
@@ -25,7 +24,7 @@ export default function insta({data}) {
             {data.data.map(d => {
                 return( 
                     <li key={d.id}>
-                        <Image 
+                        <img 
                             src={d.media_url} 
                             alt={d.username}
                             height= '500'
