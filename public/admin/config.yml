@@ -67,6 +67,11 @@ collections:
                 media_library:
                   config:
                     multiple: false
+      - label: 'Pop-up Mesajı'
+        name: 'popup'
+        file: 'content/popup.md'
+        fields:
+          - { label: 'Pop-up Resmi', name: 'image', widget: 'image', default: '/image/tercih.jpg' }
       - label: 'Etkinlikler'
         name: 'etkinlik'
         file: 'content/etkinlik.md'

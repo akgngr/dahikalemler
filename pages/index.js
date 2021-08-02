@@ -26,6 +26,7 @@ const Home = ({ file, instadata }) => (
       title="Vip Dahi Kalemler İstanbul"
       description="19 yılı aşmış tecrübemizle ve deneyimli eğitim kadromuzla öğrencilerimizin hedeflerine ulaşmaları konusunda rehber olmaktan gurur duyuyoruz."
     />
+    <Popup />
     <Slider />
     <Hizmetler />
     <Etkinlik />
